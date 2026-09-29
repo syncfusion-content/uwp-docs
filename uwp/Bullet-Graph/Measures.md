@@ -5,6 +5,7 @@ description: Measures in the UWP Bullet Graph display actual values against targ
 platform: uwp
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Measures in UWP Bullet Graph

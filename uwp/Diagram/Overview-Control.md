@@ -5,6 +5,7 @@ description: Learn about the overview control in the Syncfusion® UWP Diagram co
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Overview Control in UWP Diagram

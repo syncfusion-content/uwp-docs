@@ -5,6 +5,7 @@ description: Shape types in the UWP Maps define how geographic regions are rende
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shape Types in UWP Maps

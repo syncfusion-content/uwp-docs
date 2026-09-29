@@ -5,6 +5,7 @@ description: Tooltip support in the UWP Range Selector displays additional infor
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Tooltip Support in UWP Range Selector
 

@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® UWP S
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion UWP Sparkline control

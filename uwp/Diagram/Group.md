@@ -5,6 +5,7 @@ description: Learn how to group nodes and connectors in the Syncfusion® UWP Dia
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Group in UWP Diagram

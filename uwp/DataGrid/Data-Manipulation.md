@@ -5,6 +5,7 @@ description: Data manipulation in Data Grid supports adding, editing, deleting, 
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

@@ -5,6 +5,7 @@ description: Ranges in the UWP Bullet Graph highlight specific value intervals, 
 platform: uwp
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Ranges in UWP Bullet Graph

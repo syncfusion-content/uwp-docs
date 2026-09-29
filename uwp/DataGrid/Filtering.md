@@ -5,6 +5,7 @@ description: Filtering in Data Grid enables efficient data filtering through col
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

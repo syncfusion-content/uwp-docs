@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® UWP D
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® UWP Digital Gauge Control

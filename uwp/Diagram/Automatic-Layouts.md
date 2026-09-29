@@ -5,6 +5,7 @@ description: Learn about automatic layouts in the Syncfusion® UWP Diagram contr
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Automatic Layouts in UWP Diagram

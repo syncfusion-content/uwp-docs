@@ -5,6 +5,7 @@ description: Legend in the UWP Chart identifies series and data categories, help
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in UWP Charts

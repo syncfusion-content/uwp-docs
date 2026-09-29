@@ -5,6 +5,7 @@ description: Learn about serialization in the Syncfusion® UWP Diagram control, 
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Serialization in UWP Diagram

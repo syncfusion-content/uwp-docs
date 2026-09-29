@@ -5,6 +5,7 @@ description: 3D charts in the UWP Chart visualize data with depth and perspectiv
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # 3D Charts in UWP Chart

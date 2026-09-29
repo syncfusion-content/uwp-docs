@@ -5,6 +5,7 @@ description: Learn how to set null values and configure the on-screen keyboard i
 platform: uwp
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Setting Null Value in UWP DatePicker

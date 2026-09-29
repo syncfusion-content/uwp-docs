@@ -5,6 +5,7 @@ description: Vertical charts in the UWP Chart display series with transposed axe
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Vertical Charts in UWP Charts

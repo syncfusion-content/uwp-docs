@@ -5,6 +5,7 @@ description: Helpers in TreeGrid provide index resolver methods to identify rows
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Helpers in UWP TreeGrid

@@ -5,6 +5,7 @@ description: Interactivity in the UWP Range Selector enables user interaction, r
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Interactivity in UWP Range Selector
 

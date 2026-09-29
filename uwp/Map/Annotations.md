@@ -5,6 +5,7 @@ description: Annotations in the UWP Maps allow you to add custom text, shapes, a
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Annotations in UWP Maps

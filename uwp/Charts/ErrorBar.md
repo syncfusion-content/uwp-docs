@@ -5,6 +5,7 @@ description: Error bars in the UWP Chart represent data variability and uncertai
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # ErrorBar in UWP Charts

@@ -5,6 +5,7 @@ description: Learn here all about Setting Null Value support in Syncfusion® UWP
 platform: uwp
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Setting Null Value in UWP TimePicker

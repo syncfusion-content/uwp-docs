@@ -5,6 +5,7 @@ description: Exporting in the UWP Chart enables chart data and visuals to be sav
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Exporting in UWP Charts
 

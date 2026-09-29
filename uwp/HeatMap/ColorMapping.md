@@ -5,6 +5,7 @@ description: Color mapping in the UWP HeatMap configures color ranges for data v
 platform: uwp
 control: SfHeatMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Mapping in UWP HeatMap

@@ -5,6 +5,7 @@ description: Data markers in the UWP Smith Chart highlight individual data point
 platform: uwp
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Markers in UWP Smith Chart

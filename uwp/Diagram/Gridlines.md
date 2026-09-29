@@ -5,6 +5,7 @@ description: Learn about gridlines in the Syncfusion® UWP Diagram control, incl
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Gridlines in UWP Diagram

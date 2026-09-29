@@ -5,6 +5,7 @@ description: Legend in the UWP HeatMap identifies data value ranges through colo
 platform: uwp
 control: SfHeatMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in UWP HeatMap

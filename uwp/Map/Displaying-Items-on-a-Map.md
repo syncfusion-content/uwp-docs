@@ -5,6 +5,7 @@ description: Displaying items on a map in the UWP Maps enables visualization of 
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Displaying Items on a Map in UWP Maps

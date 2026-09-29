@@ -5,6 +5,7 @@ description: Row Height Customization in Data Grid customizes row heights dynami
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

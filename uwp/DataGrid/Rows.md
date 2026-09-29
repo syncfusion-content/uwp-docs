@@ -5,6 +5,7 @@ description: Rows in Data Grid support row headers, header rows, freeze panes, a
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

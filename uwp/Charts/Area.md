@@ -5,6 +5,7 @@ description: Area in the UWP Chart displays data as filled regions between data 
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Chart area in UWP Chart

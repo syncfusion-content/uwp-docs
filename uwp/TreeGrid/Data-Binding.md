@@ -5,6 +5,7 @@ description: Data Binding in UWP TreeGrid supports self-relational and nested co
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in UWP TreeGrid

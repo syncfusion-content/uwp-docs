@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® UWP R
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # About Syncfusion® UWP Range Selector Control
 

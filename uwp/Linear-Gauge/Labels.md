@@ -5,6 +5,7 @@ description: Labels in the UWP Linear Gauge display scale values and support cus
 platform: uwp
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Labels in UWP Linear Gauge

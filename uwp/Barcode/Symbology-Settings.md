@@ -5,6 +5,7 @@ description: Symbology settings in the UWP Barcode allow you to configure barcod
 platform: uwp
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Settings in UWP Barcode

@@ -5,6 +5,7 @@ description: Items mapping in the UWP HeatMap enables data fields to be mapped t
 platform: uwp
 control: SfHeatMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Items Mapping in UWP HeatMap

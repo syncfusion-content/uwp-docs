@@ -5,6 +5,7 @@ description: KML format in the UWP Maps enables geographic data from KML files t
 platform: uwp
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # KML Format in UWP Maps

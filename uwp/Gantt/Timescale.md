@@ -5,6 +5,7 @@ description: Learn about Timescale support in Syncfusion UWP Gantt Chart, includ
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Timescale in UWP Gantt Chart

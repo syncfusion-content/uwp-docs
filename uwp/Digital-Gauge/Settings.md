@@ -5,6 +5,7 @@ description: Settings in the UWP Digital Gauge allow you to configure display be
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Settings in UWP Digital Gauge

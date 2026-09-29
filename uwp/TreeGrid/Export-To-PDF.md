@@ -5,6 +5,7 @@ description: Export to PDF in UWP TreeGrid renders hierarchical data into PDF wi
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export to PDF in UWP TreeGrid

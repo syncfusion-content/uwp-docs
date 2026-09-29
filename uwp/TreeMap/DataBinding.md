@@ -5,6 +5,7 @@ description: Data binding in the UWP TreeMap enables visualization of hierarchic
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in UWP TreeMap

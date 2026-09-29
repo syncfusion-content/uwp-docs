@@ -5,6 +5,7 @@ description: Range band in the UWP Sparkline highlights a specified value range,
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Range Band in UWP Sparkline

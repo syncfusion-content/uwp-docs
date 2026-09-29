@@ -5,6 +5,7 @@ description: Learn how to select single or multiple dates and date ranges in the
 platform: uwp
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Selection in UWP Calendar

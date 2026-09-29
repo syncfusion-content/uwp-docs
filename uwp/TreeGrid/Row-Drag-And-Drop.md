@@ -5,6 +5,7 @@ description: Row Drag and Drop in UWP TreeGrid enables interactive row reorderin
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Row Drag and Drop in UWP TreeGrid
 

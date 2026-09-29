@@ -5,6 +5,7 @@ description: Learn how to format the display text and selector items in the Sync
 platform: uwp
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Formatting in UWP DatePicker

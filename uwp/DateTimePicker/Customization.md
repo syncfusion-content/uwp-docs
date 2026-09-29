@@ -5,6 +5,7 @@ description: Learn how to customize the day, month, year, hour, minute, and seco
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Customization in UWP DateTimePicker
