@@ -5,6 +5,7 @@ description: Scale in the UWP Linear Gauge defines value ranges, intervals, and 
 platform: uwp
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Scale in UWP Linear Gauge

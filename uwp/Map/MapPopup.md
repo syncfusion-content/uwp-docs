@@ -5,6 +5,7 @@ description: Interactive popup in the UWP Maps displays additional information f
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interactive Popup in UWP Maps

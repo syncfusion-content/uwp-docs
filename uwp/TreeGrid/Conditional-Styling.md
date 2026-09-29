@@ -5,6 +5,7 @@ description: Conditional Styling in UWP TreeGrid customizes row and cell appeara
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Conditional Styling in UWP TreeGrid
 

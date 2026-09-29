@@ -5,6 +5,7 @@ description: Learn here all about Formatting support in Syncfusion® UWP TimePic
 platform: uwp
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Formatting in UWP TimePicker

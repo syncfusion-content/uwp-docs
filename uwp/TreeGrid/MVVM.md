@@ -5,6 +5,7 @@ description: MVVM in UWP TreeGrid supports data binding, commands, and notificat
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # MVVM in UWP TreeGrid

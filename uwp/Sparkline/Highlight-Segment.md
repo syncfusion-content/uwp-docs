@@ -5,6 +5,7 @@ description: Highlight segment in the UWP Sparkline emphasizes specific data poi
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Highlight Segment in UWP Sparkline 
 

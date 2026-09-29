@@ -5,6 +5,7 @@ description: Striplines in the UWP Chart highlight specific ranges or regions on
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Striplines in UWP Charts

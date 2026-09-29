@@ -5,6 +5,7 @@ description: Sorting in the UWP Chart arranges data points based on specified va
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Sorting in UWP Charts

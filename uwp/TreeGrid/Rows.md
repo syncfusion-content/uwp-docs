@@ -5,6 +5,7 @@ description: Rows in UWP TreeGrid manages row headers, indicators, and customiza
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Rows in UWP TreeGrid

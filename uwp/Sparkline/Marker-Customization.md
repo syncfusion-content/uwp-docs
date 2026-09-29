@@ -5,6 +5,7 @@ description: Marker customization in the UWP Sparkline allows you to modify mark
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Marker Customization in UWP Sparkline

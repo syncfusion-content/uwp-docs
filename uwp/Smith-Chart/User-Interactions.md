@@ -5,6 +5,7 @@ description: User interactions in the UWP Smith Chart enable selection, tooltips
 platform: uwp
 control: SfSmithChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # User Interactions in UWP Smith Chart

@@ -5,6 +5,7 @@ description: Shape labels in the UWP Maps display text for geographic regions, h
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shape Labels in UWP Maps

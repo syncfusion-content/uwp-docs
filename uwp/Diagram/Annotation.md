@@ -5,6 +5,7 @@ description: Learn how to use annotations in the Syncfusion® UWP Diagram contro
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Annotation in UWP Diagram

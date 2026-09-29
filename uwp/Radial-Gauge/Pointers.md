@@ -5,6 +5,7 @@ description: Pointers in the UWP Radial Gauge indicate values on the gauge scale
 platform: uwp
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Pointers in UWP Radial Gauge

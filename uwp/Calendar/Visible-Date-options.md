@@ -5,6 +5,7 @@ description: Learn how to set minimum, maximum, and selective visible dates in t
 platform: uwp
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Visible Dates in UWP Calendar

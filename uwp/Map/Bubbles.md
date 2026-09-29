@@ -5,6 +5,7 @@ description: Bubbles in the UWP Maps visualize location-based data using proport
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Bubble Markers in UWP Maps

@@ -5,6 +5,7 @@ description: Learn about Column support in Syncfusion UWP Kanban Board with cate
 platform: uwp
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column in UWP Kanban Board

@@ -5,6 +5,7 @@ description: Learn about shapes in the Syncfusion® UWP Diagram control, includi
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Shapes in UWP Diagram

@@ -5,6 +5,7 @@ description: Orientation and its Customization in the UWP Linear Gauge allows yo
 platform: uwp
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Orientation and its Customization in UWP Linear Gauge

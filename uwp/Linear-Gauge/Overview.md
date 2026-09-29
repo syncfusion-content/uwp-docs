@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® UWP L
 platform: uwp
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # About Syncfusion® UWP Linear Gauge Control
 

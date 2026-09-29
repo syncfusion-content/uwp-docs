@@ -5,6 +5,7 @@ description: Ranges in the UWP Linear Gauge highlight specific value intervals o
 platform: uwp
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Ranges in UWP Linear Gauge

@@ -5,6 +5,7 @@ description: Learn how to customize the first day of the week and day name displ
 platform: uwp
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Customize Display in UWP Calendar

@@ -5,6 +5,7 @@ description: Data Validation in UWP TreeGrid supports built-in and custom rules 
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Validation in UWP TreeGrid

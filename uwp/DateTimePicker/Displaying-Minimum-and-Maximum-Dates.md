@@ -5,6 +5,7 @@ description: Learn how to set the minimum and maximum display dates in the Syncf
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Displaying Minimum and Maximum Dates in UWP DateTimePicker

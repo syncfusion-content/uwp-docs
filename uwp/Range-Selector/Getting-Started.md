@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Range Selector c
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Getting Started with UWP Range Selector
 

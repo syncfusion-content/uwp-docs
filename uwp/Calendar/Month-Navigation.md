@@ -5,6 +5,7 @@ description: Learn how to navigate between months programmatically and using nav
 platform: uwp
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Month Navigation in UWP Calendar

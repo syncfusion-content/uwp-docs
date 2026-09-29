@@ -5,6 +5,7 @@ description: Learn here about getting started with Syncfusion® UWP TimePicker (
 platform: uwp
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with UWP TimePicker
