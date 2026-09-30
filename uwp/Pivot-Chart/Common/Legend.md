@@ -5,6 +5,7 @@ description: Legend in the UWP Pivot Chart identifies data series and chart elem
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in UWP Pivot Chart

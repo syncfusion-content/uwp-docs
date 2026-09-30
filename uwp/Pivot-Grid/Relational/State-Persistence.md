@@ -5,6 +5,7 @@ description: State Persistence in Syncfusion® UWP Pivot Grid control preserves 
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # State Persistence in UWP Pivot Grid

@@ -5,6 +5,7 @@ description: Cell Selection in Syncfusion® UWP Pivot Grid control enables selec
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Cell Selection in UWP Pivot Grid

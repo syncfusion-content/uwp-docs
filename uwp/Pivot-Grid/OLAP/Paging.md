@@ -5,6 +5,7 @@ description: Paging in Syncfusion® UWP Pivot Grid control enables efficient han
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in UWP Pivot Grid

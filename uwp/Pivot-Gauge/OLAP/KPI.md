@@ -5,6 +5,7 @@ description: KPI in the UWP Pivot Gauge displays key performance indicators usin
 platform: uwp
 control: SfPivotGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # KPI in UWP Pivot Gauge

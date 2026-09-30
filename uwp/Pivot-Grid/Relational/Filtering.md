@@ -5,6 +5,7 @@ description: Filtering in Syncfusion® UWP Pivot Grid control displays subsets o
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in UWP Pivot Grid

@@ -5,6 +5,7 @@ description: Drill operation in the UWP Pivot Chart enables users to expand and 
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Drill Operation in UWP Pivot Chart

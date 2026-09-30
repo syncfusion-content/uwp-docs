@@ -5,6 +5,7 @@ description: All-Level Type Member in Syncfusion® UWP Pivot Grid shows an all p
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # All-Level Type Member in UWP Pivot Grid

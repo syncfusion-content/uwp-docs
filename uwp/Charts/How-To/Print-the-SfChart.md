@@ -5,6 +5,7 @@ description: Print the UWP Chart to create physical copies of chart visuals for 
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to print the chart in UWP Chart

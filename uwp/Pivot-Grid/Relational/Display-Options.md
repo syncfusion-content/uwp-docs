@@ -5,6 +5,7 @@ description: Display Options in Syncfusion® UWP Pivot Grid control define how c
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Display Options in UWP Pivot Grid

@@ -5,6 +5,7 @@ description: Axis in the UWP Pivot Chart defines data scales, categories, and va
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis in UWP Pivot Chart
