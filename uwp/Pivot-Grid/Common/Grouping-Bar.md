@@ -5,6 +5,7 @@ description: Grouping Bar in Syncfusion® UWP Pivot Grid control lets users add,
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping Bar in UWP Pivot Grid

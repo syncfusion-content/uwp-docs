@@ -5,6 +5,7 @@ description: KPI in Syncfusion® UWP Pivot Grid control displays business metric
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # KPI in UWP Pivot Grid

@@ -5,6 +5,7 @@ description: Watermark in the UWP Pivot Chart displays custom text or images in 
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Watermark in UWP Pivot Chart

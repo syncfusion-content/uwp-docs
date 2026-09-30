@@ -5,6 +5,7 @@ description: Excel-like Filtering and Sorting in Syncfusion® UWP Pivot Grid con
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Excel-Like Filtering and Sorting in UWP Pivot Grid

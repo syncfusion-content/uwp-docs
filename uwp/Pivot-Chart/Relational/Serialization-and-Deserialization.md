@@ -5,6 +5,7 @@ description: Serialization and deserialization in the UWP Pivot Chart enable sav
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Serialization and Deserialization in UWP Pivot Chart

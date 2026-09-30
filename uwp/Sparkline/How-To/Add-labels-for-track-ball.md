@@ -5,6 +5,7 @@ description: Add labels for the track ball in the UWP Sparkline to display data 
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to add labels for track ball in UWP Sparkline

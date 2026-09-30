@@ -5,6 +5,7 @@ description: KPI in the UWP Pivot Chart displays key performance indicators, ena
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # KPI in UWP Pivot Chart
