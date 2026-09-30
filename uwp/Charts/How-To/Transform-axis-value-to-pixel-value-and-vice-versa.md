@@ -5,6 +5,7 @@ description: Transform axis values to pixel values and convert pixel values back
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to transform axis value to pixel value in UWP Chart

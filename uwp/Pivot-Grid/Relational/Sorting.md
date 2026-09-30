@@ -5,6 +5,7 @@ description: Sorting in Syncfusion® UWP Pivot Grid control helps users organize
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in UWP Pivot Grid

@@ -5,6 +5,7 @@ description: Learn how to render KML shapes in a ShapeFileLayer and configure KM
 platform: uwp
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to render KML shapes in shape file layer for UWP Maps

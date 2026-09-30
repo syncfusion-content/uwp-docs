@@ -5,6 +5,7 @@ description: Customize cell styles and templates in Syncfusion® UWP Pivot Grid 
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Cell Style and Template in UWP Pivot Grid

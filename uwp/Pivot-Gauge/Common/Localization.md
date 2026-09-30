@@ -5,6 +5,7 @@ description: Localization in the UWP Pivot Gauge enables gauge content and user 
 platform: uwp
 control: SfPivotGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Localization in UWP Pivot Gauge

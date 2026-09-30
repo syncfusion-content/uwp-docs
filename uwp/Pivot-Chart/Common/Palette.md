@@ -5,6 +5,7 @@ description: Palette in the UWP Pivot Chart customizes series colors using prede
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Palette in UWP Pivot Chart

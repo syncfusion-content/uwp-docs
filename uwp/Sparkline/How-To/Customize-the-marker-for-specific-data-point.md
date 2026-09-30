@@ -5,6 +5,7 @@ description: Customize a data point marker in the UWP Sparkline to apply distinc
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to customize a data point marker in UWP Sparkline
