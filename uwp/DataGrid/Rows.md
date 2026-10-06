@@ -12,7 +12,7 @@ appliesto: UI Component Suite, Grid SDK
 
 # Rows in UWP Data Grid
 
-This section explains about various row types in SfDataGrid.
+This section explains about various row types in Data Grid.
 
 [StackedHeaderRow](http://help.syncfusion.com/uwp/datagrid/columns#stacked-headers)
 
@@ -39,7 +39,7 @@ dataGrid.ShowRowHeader = true;
 {% endtabs %}
 
 
-![Row Header in UWP DataGrid](Rows_images/Rows_img1.png)
+![Row Header](Rows_images/Rows_img1.png)
 
 You can change the width of row header by setting `SfDataGrid.RowHeaderWidth` property.
 
@@ -57,7 +57,7 @@ Description
 </tr>
 <tr>
 <td>
-Current cell in the row in UWP DataGrid<img src="Rows_images/Rows_img2.png" alt="UWP DataGrid Current cell"/>
+Current cell in the row in UWP DataGrid<img src="Rows_images/Rows_img2.png" alt="Current cell"/>
 </td>
 <td>
 Denotes the row which has current cell or has selected item.
@@ -65,7 +65,7 @@ Denotes the row which has current cell or has selected item.
 </tr>
 <tr>
 <td>
-Edited row in UWP DataGrid<img src="Rows_images/Rows_img3.png" alt="UWP DataGrid Edited row"/>
+Edited row in UWP DataGrid<img src="Rows_images/Rows_img3.png" alt="Edited row"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -73,7 +73,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-Adding new row in UWP DataGrid<img src="Rows_images/Rows_img4.png" alt="UWP DataGrid AddNewRow"/>
+Adding new row in UWP DataGrid<img src="Rows_images/Rows_img4.png" alt="AddNewRow"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -81,7 +81,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-Rows with errors in UWP DataGrid<img src="Rows_images/Rows_img5.png" alt="UWP DataGrid Rows with errors"/>
+Rows with errors in UWP DataGrid<img src="Rows_images/Rows_img5.png" alt="Rows with errors"/>
 </td>
 <td>
 Denotes the row has errors. 
@@ -89,7 +89,7 @@ Denotes the row has errors.
 </tr>
 <tr>
 <td>
-Current rows with errors in UWP DataGrid<img src="Rows_images/Rows_img6.png" alt="UWP DataGrid Current rows"/>
+Current rows with errors in UWP DataGrid<img src="Rows_images/Rows_img6.png" alt="Current rows with errors"/>
 </td>
 <td>
 Denotes that the current row which has errors.
@@ -105,9 +105,9 @@ See also.
 
 ## Header Row
 
-Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of Data Grid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Show the column header in Header row in UWP DataGrid](Rows_images/Rows_img7.png)
+![Show the column header in Header row](Rows_images/Rows_img7.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) property.
 
@@ -140,11 +140,11 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 {% endtabs %}
 
 
-![Hiding the row header in details view datagrid](Rows_images/Rows_img8.png)
+![Hiding the row header in Details View Data Grid](Rows_images/Rows_img8.png)
 
 ## Freeze panes
 
-SfDataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
+Data Grid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
 
 <table>
 <tr>
@@ -160,7 +160,7 @@ Description
 {{'[FrozenRowsCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FrozenRowsCount)'| markdownify }}
 </td>
 <td>
-Set the frozen rows count at top of the SfDataGrid.
+Set the frozen rows count at top of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -168,7 +168,7 @@ Set the frozen rows count at top of the SfDataGrid.
 {{'[FooterRowsCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FooterRowsCount)'| markdownify }}
 </td>
 <td>
-Set the footer rows count at bottom of the SfDataGrid.
+Set the footer rows count at bottom of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -176,7 +176,7 @@ Set the footer rows count at bottom of the SfDataGrid.
 {{'[FrozenColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FrozenColumnCount)'| markdownify }}
 </td>
 <td>
-Set the frozen columns count in left side of the SfDataGrid. 
+Set the frozen columns count in left side of the Data Grid. 
 </td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@ Set the frozen columns count in left side of the SfDataGrid.
 {{'[FooterColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FooterColumnCount)'| markdownify }}
 </td>
 <td>
-Set the frozen columns in right side of the SfDataGrid.
+Set the frozen columns in right side of the Data Grid.
 </td>
 </tr>
 </table>
@@ -208,7 +208,7 @@ dataGrid.FrozenRowsCount = 3;
 {% endtabs %}
 
 
-![Show the Fotter column, Footer rows, Frozen column , Frozen rows in SfDataGrid](Rows_images/Rows_img9.png)
+![Show the Fotter column, Footer rows, Frozen column , Frozen rows](Rows_images/Rows_img9.png)
 
 ### Differentiate frozen rows from normal rows
 
@@ -352,7 +352,7 @@ private void DataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEven
 
 2. When `AllowFrozenGroupHeaders` is `true`, frozen rows will not be considered.
 
-3. SfDataGrid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
+3. Data Grid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
 
 N> 
 
