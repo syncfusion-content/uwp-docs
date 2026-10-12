@@ -442,7 +442,7 @@ _ribbon.QuickAccessToolBar = qat
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 ## Configure BackStage
 
