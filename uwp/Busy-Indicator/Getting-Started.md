@@ -56,7 +56,7 @@ Dim busyIndicator As New SfBusyIndicator()
 
 {% endtabs %}
 
-![Animation Winmil](SfBusyIndicator1/Winrt.png)
+![SfBusyIndicator with default WinRT animation](SfBusyIndicator1/Winrt.png)
 
 ## Choosing Animation
 
@@ -92,7 +92,7 @@ Dim busyIndicator As New SfBusyIndicator() With {.AnimationType = AnimationTypes
 
 {% endtabs %}
 
-![Animation Gear](SfBusyIndicator1/Gear.png)
+![SfBusyIndicator with Gear animation](SfBusyIndicator1/Gear.png)
 
 ## Setting UWP Busy Indicator Header
 

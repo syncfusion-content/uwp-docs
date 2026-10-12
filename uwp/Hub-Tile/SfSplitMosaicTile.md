@@ -161,7 +161,7 @@ splitMosaicTile.Header = "Mosaic Tile"
 
 {% highlight XAML %}
 
-<Page xmlns:x=http://schemas.microsoft.com/winfx/2006/xaml
+<Page xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

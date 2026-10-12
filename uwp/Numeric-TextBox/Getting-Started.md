@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with UWP SfNumericTextBox | Syncfusion®
 description: Learn how to get started with the Syncfusion® UWP SfNumericTextBox control. Explore setup, features, examples, and customization options.
@@ -9,8 +9,8 @@ documentation: ug
 
 # Getting Started with UWP Numeric TextBox
 
-Namespace:  Syncfusion.UI.Xaml.Controls.Input
-Assembly:  Syncfusion.SfInput.UWP 
+Namespace: Syncfusion.UI.Xaml.Controls.Input
+Assembly: Syncfusion.SfInput.UWP
 
 Dependent assembly: Syncfusion.SfShared.UWP
 
@@ -24,8 +24,6 @@ The following code sample shows how to create the UWP Numeric TextBox from code-
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-
-
         <editors:SfNumericTextBox HorizontalAlignment="Center"
 
                                VerticalAlignment="Center"
@@ -33,8 +31,6 @@ The following code sample shows how to create the UWP Numeric TextBox from code-
                                Width="200"
 
                                Value="123.45"/>
-
-
 
     </Grid>
 
@@ -55,6 +51,7 @@ Dim numericTextBox As New SfNumericTextBox()
 {% endhighlight %}
 
 {% endtabs %}
+
 
 ## See also
 

@@ -395,11 +395,53 @@ QAT items can be added as follows,
 
 {% endhighlight %}
 
-{% endtabs %}
+{% highlight C# %}
 
-You can limit the number of viewable items in QAT by setting DisplayItemsCount property. When the total number of items exceeds DisplayItemsCount, scroll QAT for viewing the items.
+SfRibbon _ribbon = new SfRibbon() { QATVisibility = Visibility.Visible };
 
-![Configuring QAT](Getting-Started_images/Getting-Started_img5.jpeg)
+QuickAccessToolBar qat = new QuickAccessToolBar() { DisplayItemsCount = 3 };
+
+Grid qatGrid = new Grid();
+
+StackPanel qatPanel = new StackPanel() { Orientation = Orientation.Horizontal, Name = "PART_QAT" };
+
+qatPanel.Children.Add(new SfRibbonButton() { Icon = new BitmapImage(new Uri("ms-appx:/Assets/Undo.png", UriKind.RelativeOrAbsolute)) });
+
+qatPanel.Children.Add(new SfRibbonButton() { Icon = new BitmapImage(new Uri("ms-appx:/Assets/Redo.png", UriKind.RelativeOrAbsolute)) });
+
+qatGrid.Children.Add(qatPanel);
+
+qat.Content = qatGrid;
+
+_ribbon.QuickAccessToolBar = qat;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbon As New SfRibbon() With {.QATVisibility = Visibility.Visible}
+
+Dim qat As New QuickAccessToolBar() With {.DisplayItemsCount = 3}
+
+Dim qatGrid As New Grid()
+
+Dim qatPanel As New StackPanel() With {
+    .Orientation = Orientation.Horizontal,
+    .Name = "PART_QAT"
+}
+
+qatPanel.Children.Add(New SfRibbonButton() With {.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Undo.png", UriKind.RelativeOrAbsolute))})
+
+qatPanel.Children.Add(New SfRibbonButton() With {.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Redo.png", UriKind.RelativeOrAbsolute))})
+
+qatGrid.Children.Add(qatPanel)
+
+qat.Content = qatGrid
+
+_ribbon.QuickAccessToolBar = qat
+
+{% endhighlight %}
+
 
 
 ## Configure BackStage
@@ -408,7 +450,8 @@ BackStageButton and BackStage TabItems can be added as follows,
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
+
 <ribbon:SfRibbon.BackStage>
 
 <ribbon:SfBackstage>
@@ -421,12 +464,42 @@ BackStageButton and BackStage TabItems can be added as follows,
 
 </ribbon:SfRibbon.BackStage>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+SfRibbon _ribbon = new SfRibbon();
+
+SfBackstage backStage = new SfBackstage();
+
+backStage.Items.Add(new SfBackStageTabItem() { Header = "Save", Icon = new BitmapImage(new Uri("ms-appx:/Assets/Save.png", UriKind.RelativeOrAbsolute)) });
+
+backStage.Items.Add(new SfBackStageButton() { Label = "Exit", Icon = new BitmapImage(new Uri("ms-appx:/Assets/Exit.png", UriKind.RelativeOrAbsolute)) });
+
+_ribbon.BackStage = backStage;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbon As New SfRibbon()
+
+Dim backStage As New SfBackstage()
+
+backStage.Items.Add(New SfBackStageTabItem() With {
+    .Header = "Save",
+    .Icon = New BitmapImage(New Uri("ms-appx:/Assets/Save.png", UriKind.RelativeOrAbsolute))
+})
+
+backStage.Items.Add(New SfBackStageButton() With {
+    .Label = "Exit",
+    .Icon = New BitmapImage(New Uri("ms-appx:/Assets/Exit.png", UriKind.RelativeOrAbsolute))
+})
+
+_ribbon.BackStage = backStage
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Configure BackStage](Getting-Started_images/Getting-Started_img6.jpeg)
-
-

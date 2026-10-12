@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a UWP Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in the control.
 
-![rotator](images/rotator.png)
+![SfRotator control for UWP](images/rotator.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -52,9 +52,17 @@ To develop an application with UWP Rotator is simple. The following steps explai
 
 {% highlight Xaml %}		
 	
+	<Page
+	x:Class="Rotator.MainPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:syncfusion="using:Syncfusion.UI.Xaml.Rotator">
+
 	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 		<syncfusion:SfRotator x:Name="rotator"/>
 	</Grid> 
+
+	</Page>
 
 
 {% endhighlight %}

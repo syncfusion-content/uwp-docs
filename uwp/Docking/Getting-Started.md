@@ -13,15 +13,14 @@ This section explains how to implement a similar UI as Visual Studio using the `
 
 ## Add SfDockingManager
 
-There are several ways to add Syncfusion control in to the Visual Studio UWP project. The following will help to add a `SfDockingManager` control through XAML Code.
+The `SfDockingManager` can be added to a Visual Studio UWP project through XAML code as follows.
 
-* Create a UWP project in Visual Studio and refer to the following assemblies.
+1. Create a UWP project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion.SfDockingManager.UWP
+    * Syncfusion.SfDockingManager.UWP
+    * Syncfusion.SfShared.UWP
 
-2. Syncfusion.SfShared.UWP
-
-* Include an XML namespace for the above assemblies to the Main page.
+2. Include the XML namespace for the above assemblies in the Main page.
 
 {% tabs %}
 
@@ -39,12 +38,13 @@ xmlns:local="using:DockingManager_GettingStarted"
 
 xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
+</Page>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-* Now add the `SfDockingManager` control with a required optimal name by using the included namespace.
+3. Now add the `SfDockingManager` control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
