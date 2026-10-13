@@ -162,7 +162,7 @@ This will populate the UWP Radial Menu as shown in the image below.
 
 ### Display Member Path 
 
-DisplayMemberPath property of the UWP Radial Menu used to define which business model property needs to be displayed inside the header of the radial menu items.  
+The `DisplayMemberPath` property of the UWP Radial Menu defines which business model property is displayed in the header of the radial menu items.  
 
 {% highlight xaml %}
 

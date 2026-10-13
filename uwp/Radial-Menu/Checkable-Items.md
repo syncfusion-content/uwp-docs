@@ -27,7 +27,7 @@ The GroupName property of the radial menu item can be used to group the items in
 
 ### IsChecked
 
-IsChecked property of radial menu item can be used to get or set the checked state of an item. 
+The `IsChecked` property of a radial menu item gets or sets the checked state of the item. 
 
 {% tabs %}
 

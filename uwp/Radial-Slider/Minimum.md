@@ -11,12 +11,36 @@ documentation: ug
 
 Gets or sets the minimum possible value. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfRadialSlider
+<syncfusion:SfRadialSlider x:Name="radialSlider"
 
             Minimum="0" 
 
             Maximum="100" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider.Minimum = 0;
+
+radialSlider.Maximum = 100;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialSlider.Minimum = 0
+
+radialSlider.Maximum = 100
+
+{% endhighlight %}
+
+{% endtabs %}
