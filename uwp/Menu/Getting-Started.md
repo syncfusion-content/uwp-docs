@@ -37,13 +37,13 @@ xmlns:menu="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
-2.Now add the `SfMenu` control with a required optimal name using the included namespace
+2. Now add the `SfMenu` control with a required optimal name using the included namespace.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<menu:SfMenu  x:Name="menu">
+<menu:SfMenu  x:Name="menu"/>
 
 
 {% endhighlight %}

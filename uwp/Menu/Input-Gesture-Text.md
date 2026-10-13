@@ -10,11 +10,11 @@ documentation: ug
 
 # Input Gesture Text in UWP Menu (SfMenu)
 
-`InputGestureText` is used to set `SfMenuItem` to display shortcut keys along with its Header. This support can be utilized by using the `InputGestureText` property. The value given by using this property will be displayed along with the Header of `SfMenuItem`.
+The `InputGestureText` property of `SfMenuItem` is used to display shortcut keys along with its Header. This support can be utilized by using the `InputGestureText` property. The value given by using this property will be displayed along with the Header of `SfMenuItem`.
 
 ## Adding the InputGestureText to SfMenuItem
 
-The value assigned by `InputGestureText` property will be displayed in `SfMenuItem` along with the Header property value of `SfMenuItem`. The `InputGestureText` can be added to `SfMenuItem` as shown in the following code snippet.
+The value assigned by using the `InputGestureText` property will be displayed in `SfMenuItem` along with the Header property value of `SfMenuItem`. The `InputGestureText` can be added to `SfMenuItem` as shown in the following code snippet.
 
 {% tabs %}
 
