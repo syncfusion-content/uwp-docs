@@ -12,7 +12,7 @@ Items can be selected programmatically using the properties `SelectedIndex`, `Se
 
 ## Selecting an item using SelectedIndex
 
-`SelectedIndex` property is used to select an item in UWP Carousel using the index of item. 
+The `SelectedIndex` property is used to select an item in UWP Carousel using the index of the item. 
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ carousel.SelectedIndex = 2
 
 ## Selecting an item using SelectedItem
 
-SelectedItem property is used to select an item in UWP Carousel using the instance of item. 
+The `SelectedItem` property is used to select an item in UWP Carousel using the instance of the item.
 
 {% tabs %}
 
