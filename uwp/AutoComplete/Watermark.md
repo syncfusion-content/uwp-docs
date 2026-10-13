@@ -87,4 +87,3 @@ Any business object can be bound to the Watermark property and that object can b
 </editors:SfTextBoxExt>
 
 {% endhighlight %}
-
