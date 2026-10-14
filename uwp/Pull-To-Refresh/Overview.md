@@ -2,7 +2,7 @@
 layout: post
 title: About UWP Pull To Refresh control | Syncfusion
 description: Learn here all about introduction of Syncfusion UWP Pull To Refresh (SfPullToRefresh) control, its elements and more.
-platform: UWP
+platform: uwp
 control: PullToRefresh
 documentation: ug
 --- 
@@ -22,11 +22,10 @@ PullToRefresh controls are mainly used in applications where the user needs to r
 
 ## Key Features
 
+* `Transition`: Specifies the transition type of the `PullToRefresh`. 
 
-• `Transition`: Specifies the transition type of the `PullToRefresh`. 
+* `Position`: Specifies the position of the transition to take place. 
 
-• `Position`: Specifies the position of the transition to take place. 
-
-• `Refresh()`: `Refresh()` refreshes the content being viewed.
+* `Refresh()`: `Refresh()` refreshes the content being viewed.
 
 ![Overview_img1](Overview_images/Overview_img1.png)
