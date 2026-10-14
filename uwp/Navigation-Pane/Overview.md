@@ -13,7 +13,7 @@ The UWP Navigation Pane control provides a navigation UI similar to Microsoft Ou
 
 ## Features
 
-* Provides three different SizeModes for content popup
+* Provides three different `SizeModes` for content popup
 * Built-in animations for content popup
 * Allows to position the Popup either Right or Left
 

@@ -19,9 +19,7 @@ PopUp can be displayed in full height of the UWP Navigation Pane by setting `Pop
 
 {% highlight XAML %}
 
-<navigation:SfGroupBar PopupSizeMode="FullSize" VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+<navigation:SfGroupBar PopupSizeMode="FullSize" VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 
@@ -38,9 +36,7 @@ PopUp can be displayed in equal height of the popup expander button in UWP Navig
 
 {% highlight XAML %}
 
-<navigation:SfGroupBar PopupSizeMode="DefaultSize" VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+<navigation:SfGroupBar PopupSizeMode="DefaultSize" VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 
@@ -59,9 +55,7 @@ Content popup can be set to custom size using the properties `PopupSizeMode`, `P
 
 <navigation:SfGroupBar Margin="5 0 0 5" PopupSizeMode="CustomSize"
                        PopupWidth="500" PopupHeight="100"
-					   VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+					   VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 
