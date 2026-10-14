@@ -13,7 +13,7 @@ Gets or sets the minimum possible value of the range.
 
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="500" Minimum="0" Maximum="100" />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="500" Minimum="0" Maximum="100" />
 
 {% endhighlight %}
 
