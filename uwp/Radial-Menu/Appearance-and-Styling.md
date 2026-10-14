@@ -75,7 +75,7 @@ radialMenu.CenterRimRadiusFactor = 0.3
 
 ## RimBackground
 
-RimBackground property used to fill the outer rim (outer circle).
+The `RimBackground` property is used to fill the outer rim (outer circle).
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ radialMenu.RimBackground = New SolidColorBrush(Colors.Green)
 
 ## RimActiveBrush
 
-RimActiveBrush property used to fill the expander rim and this expander rim only visible when the items have sub items.   
+The `RimActiveBrush` property is used to fill the expander rim, which is visible only when items have sub-items.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ radialMenu.RimActiveBrush = New SolidColorBrush(Colors.Red)
 
 ## RimRadiusFactor
 
-RimRadiusFactor property of UWP Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
+RimRadiusFactor property of UWP Radial Menu can be used to set the radius of the items panel. Lower values increase the thickness of the outer rim; higher values decrease it. 
 
 {% tabs %}
 
@@ -192,7 +192,7 @@ IsOpen="True" />
 
 ## Editing SubMenu Items Programmatically
 
-With the DrillDownItem property, you can access and edit submenu items of UWP Radial Menu at various hierarchy levels programmatically. The following code example and screen shot illustrate this.
+With the DrillDownItem property, you can access and edit submenu items of UWP Radial Menu at various hierarchy levels programmatically. The following code example and screenshot illustrate this.
 {% tabs %}
 {% highlight xaml %}
 
@@ -200,7 +200,7 @@ With the DrillDownItem property, you can access and edit submenu items of UWP Ra
 
      <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-<navigation:SfRadialMenu  x:Name="radialmenu">
+<navigation:SfRadialMenu  x:Name="radialMenu" IsOpen="True">
 
 <navigation:SfRadialMenuItem Header="Edit" x:Name="edit">
 

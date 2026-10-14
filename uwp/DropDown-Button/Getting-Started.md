@@ -15,7 +15,7 @@ This section explains how to create the UWP DropDown Button control.
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfInput.UWP
+1. Syncfusion.SfInput.UWP
 2. Syncfusion.SfShared.UWP
 
 
@@ -48,7 +48,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 ### Adding UWP DropDown Button control through C# Code
 
-1.Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml.cs
+1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml.cs
 
 {% tabs %}
 

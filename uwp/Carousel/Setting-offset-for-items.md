@@ -97,7 +97,7 @@ carousel.Offset = 100.0
 
 ## Scaling the unselected items
 
-`ScaleOffset` is used to scale the carousel items that are not selected.
+The `ScaleOffset` property is used to scale the carousel items that are not selected.
 
 {% tabs %}
 
@@ -181,7 +181,7 @@ carousel.ScaleOffset = 0.5
 
 ## Displacing the selected and unselected items
 
-`SelectedItemOffset` is set to specify the distance of selected item from other carousel items.
+The `SelectedItemOffset` property is used to specify the distance of the selected item from the other carousel items.
 
 {% tabs %}
 

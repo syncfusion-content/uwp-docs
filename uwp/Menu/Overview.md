@@ -12,10 +12,10 @@ documentation: ug
 
 The `SfMenu` supports the hierarchical organization of items associated with commands and event handlers. It contains a collection of `SfMenuItem` objects that can be expanded to display additional menu items or perform a specific action when clicked.
 
-## Features:
+## Features
 
-* `ItemsSource` -  List of options can be bound to the control
-* `Orientation` - Provides support to Horizontal / Vertical orientation.
-* `PopUpAnimationType` - Built-in popup open Animations are available
-* Provide support for `CheckBox` and `RadioButton` selected menu items.
+* `ItemsSource` – Binds a list of options to the control
+* `Orientation` – Provides support for Horizontal / Vertical orientation
+* `PopUpAnimationType` – Built-in popup open animations are available
+* Provides support for `CheckBox` and `RadioButton` selected menu items
 

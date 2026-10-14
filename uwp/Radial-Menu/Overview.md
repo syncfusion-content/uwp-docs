@@ -15,6 +15,6 @@ The UWP Radial Menu displays a hierarchical menu in a circular layout optimized 
 
 ## Key Features
 
-* Items Source – Any business object collection can be bound to control. 
-* Commanding – Each item can be bound to a command that could perform an action. 
-* Color Palette – Easy to form radial color palette layout. 
+* Items Source – Bind any business object collection to the control. 
+* Commanding – Bind each item to a command that performs an action. 
+* Color Palette – Easily form a radial color palette layout.
