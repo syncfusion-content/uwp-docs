@@ -79,7 +79,7 @@ carousel.Items.Add(New SfCarouselItem())
 
 ### Displaying the items
 
-`Content` property helps to set the content for `SfCarouselItem`. `SfCarouselItem` is a ContentControl so that any object can be added as its content. 
+The `Content` property is used to set the content for `SfCarouselItem`. `SfCarouselItem` is a ContentControl so that any object can be added as its content. 
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ UWP Carousel accepts any business object collection to be bound to its `ItemsSou
 
 ### Adding items to the control
 
-Follow the below steps to add the Items through `ItemsSource` property.
+Follow the below steps to add the items through the `ItemsSource` property.
 
 1.Create a model
 

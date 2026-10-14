@@ -19,7 +19,7 @@ The default animation used during the selection of carousel items can be customi
 
 ## Change animation duration
 
-The time taken to move a selected item from its position to center of the control is specified by `Duration` property.
+The time taken to move a selected item from its position to the center of the control is specified by the `Duration` property.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ carousel.Duration = TimeSpan.FromSeconds(1.0)
 
 ## Customizing the item selection animation
 
-The animation effect on selecting items can be customized with `EasingFunction` property.
+The animation effect on selecting items can be customized with the `EasingFunction` property.
 
 {% tabs %}
 
@@ -108,7 +108,7 @@ End Sub
 
 ## Rotate items
 
-`RotationAngle` property is used to rotate all the items in UWP Carousel control to a specified angle.
+The `RotationAngle` property is used to rotate all the items in the UWP Carousel control by a specified angle.
 
 {% tabs %}
 

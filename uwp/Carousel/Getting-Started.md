@@ -41,7 +41,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% highlight XAML %}
 
-<layout:SfCarousel x:Name="carousel">
+<layout:SfCarousel x:Name="carousel"/>
 
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ Dim carousel As New SfCarousel()
 
 ## Adding SfCarouselItems to the control
 
-Here SfCarouselItems are added as the children of the UWP Carousel.
+Here, the SfCarouselItems are added as the children of the UWP Carousel.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ carousel.Items.Add(New SfCarouselItem())
 
 ## Setting content for CarouselItems
 
-Content property helps to set the content for SfCarouselItem. `SfCarouselItem` is a ContentControl so that any object can be added as its content. Here images are set as the content of carousel items.
+The `Content` property is used to set the content for `SfCarouselItem`. `SfCarouselItem` is a ContentControl so that any object can be added as its content. Here, images are set as the content of the carousel items.
 
 {% tabs %}
 

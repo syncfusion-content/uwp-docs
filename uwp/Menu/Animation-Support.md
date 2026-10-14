@@ -16,12 +16,12 @@ The `SfMenu` provides various animation types for displaying submenu pop-ups. Th
 * Scroll
 * None
 
-Default 'PopUpAnimationType' is None.
+The default `PopUpAnimationType` is None.
 
 ## Adding the Animation Support to an Application
 
 
-The opening and closing of submenu popup animation can be changed by  `PopUpAnimationType` property. If the `PopUpAnimationType` property is set to None, the submenu will open without any animation. 
+The opening and closing of submenu popup animation can be changed by setting the `PopUpAnimationType` property. If the `PopUpAnimationType` property is set to None, the submenu will open without any animation. 
 
 The Animation support can be added to an application, as shown in the following code snippet.
 

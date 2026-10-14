@@ -9,11 +9,11 @@ documentation: ug
 
 # CheckBox and RadioButton in UWP Menu (SfMenu)
 
-`SfMenu` provides a support for selecting several items. `SfMenuItem` can be changed as checkable by setting the `IsCheckable` property of the `SfMenuItem` to “true”. You can change the icon type (Check Box or Radio Button) by using the `CheckIconType` property, also it can be checked by using the `IsChecked` property.
+`SfMenu` provides support for selecting several items. `SfMenuItem` can be changed as checkable by setting the `IsCheckable` property of the `SfMenuItem` to “true”. You can change the icon type (Check Box or Radio Button) by using the `CheckIconType` property, also it can be checked by using the `IsChecked` property.
 
 ## Add Check Box and Radio Button in SfMenuItem
 
-`SfMenuItem’s` will be grouped based on the value of the GroupName property and it allows to select only one item from the group by setting the `CheckIconType` property of `SfMenuItem` to RadioButton. Similarly `SfMenuItem` can be checked and unchecked by set the `CheckIconType` property of `SfMenuItem` to CheckBox. The Check Box and Radio Button support can be used as shown in the following code snippet.
+`SfMenuItem’s` will be grouped based on the value of the `GroupName` property, and it allows selecting only one item from the group by setting the `CheckIconType` property of `SfMenuItem` to RadioButton. Similarly, `SfMenuItem` can be checked and unchecked by setting the `CheckIconType` property of `SfMenuItem` to CheckBox. The Check Box and Radio Button support can be used as shown in the following code snippet.
 
 {% tabs %}
 

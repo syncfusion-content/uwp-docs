@@ -14,11 +14,7 @@ documentation: ug
 AccentBrush property is used to decorate the hot spots of a control with a solid color.
 
 {% highlight xaml %}
-<input:SfDropDownButton Content="5/24/2016" AccentBrush="Red" x:Name="dropdownbutton
-
-"/>
-
-
+<input:SfDropDownButton Content="5/24/2016" AccentBrush="Red" x:Name="dropdownbutton"/>
 {% endhighlight %}
 
 ![Apperance-and-Styling_img1](Apperance-and-Styling_images/Apperance-and-Styling_img1.jpeg)
@@ -50,9 +46,9 @@ ContentTemplate property is used to decorate the content of the UWP DropDown But
 ![Apperance-and-Styling_img2](Apperance-and-Styling_images/Apperance-and-Styling_img2.jpeg)
 
 
-## DropdownContentTemplate
+## DropDownContentTemplate
 
-DropDownContentTemplate is used to decorate the drop down content of UWP DropDown Button.
+DropDownContentTemplate is used to decorate the drop-down content of UWP DropDown Button.
 
 {% highlight xaml %}
 <input:SfDropDownButton DropDownContent="Drop down content">

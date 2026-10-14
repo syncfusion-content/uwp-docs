@@ -27,7 +27,7 @@ InnerRimStrokeThickness property can be used to set the thickness of the Inner R
 
 ### Inner Rim Fill
 
-InnerRimFill property can be used the set the fill color of the Inner Rim. 
+InnerRimFill property can be used to set the fill color of the Inner Rim.
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ radialSlider.InnerRimStrokeThickness = 4
 
 ## Outer Rim 
 
-Outer Rim term denotes circular track (outer circle) of UWP Radial Slider.  Following properties can be used to customize the Inner Rim
+Outer Rim term denotes circular track (outer circle) of UWP Radial Slider.  Following properties can be used to customize the Outer Rim.
 
 ### Outer Rim Radius Factor
 
@@ -315,7 +315,7 @@ Visibility of ticks can be controlled by LabelVisibility property.
 ![Concepts--and-Features_img13](Concepts--and-Features_images/Concepts--and-Features_img13.png)
 
 ## Pointer
-The Pointer that is used for the select the value by dragging in circular track can be customized with the following properties. 
+The Pointer that is used to select the value by dragging in circular track can be customized with the following properties. 
 
 ### Pointer Radius Factor
 

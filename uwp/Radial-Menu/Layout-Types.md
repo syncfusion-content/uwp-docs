@@ -18,15 +18,15 @@ Both the layout types divide the available space equally among all the children 
 
 ## Default
 
-Number of segments in the panel is determined by children count in the level. Hence segment count in each hierarchical level differs. RadialMenuItem is arranged in the sequential order as added in the UWP Radial Menu.
+Number of segments in the panel is determined by children count in the level. Hence, the segment count differs in each hierarchical level. `SfRadialMenuItem` is arranged in the order in which it was added to the UWP Radial Menu.
 
 ## Custom
 
-Number of segments in the panel is determined by VisibleSegmentsCount property. Hence segment count in all the hierarchical levels are same. RadialMenuItem is arranged in any order based on the SegmentIndex property.
+Number of segments in the panel is determined by VisibleSegmentsCount property. Hence, the segment count is the same in all hierarchical levels. `SfRadialMenuItem` is arranged based on the `SegmentIndex` property.
 
 ## VisibleSegmentsCount
 
-VisibleSegmentsCount property is used to specify the number of segments available in circular panel. When children count is greater than the value given in VisibleSegmentsCount property then overflowing children are not arranged in the panel. When children count is lesser than VisibleSegmentsCount property then remaining segments are left free.
+VisibleSegmentsCount property is used to specify the number of segments available in circular panel. When the number of children is greater than `VisibleSegmentsCount`, the overflowing children are not arranged in the panel. When it is fewer, the remaining segments are left empty.
 
 {% tabs %}
 {% highlight xaml %}
@@ -59,12 +59,12 @@ radialMenu.VisibleSegmentsCount = 7
 
 ## SegmentIndex
 
-SegmentIndex property is used to specify the index of the SfRadialMenuItem in circular panel. Based on the index, the RadialMenuItems are inserted in the segment. When SegmentIndex is not specified for a RadialMenuItem (or) two or more RadialMenuItems having the same SegmentIndex, then the menu item is arranged in the next available free segment. 
+SegmentIndex property is used to specify the index of the SfRadialMenuItem in circular panel. Based on the index, the `SfRadialMenuItem` objects are placed in the segments. When `SegmentIndex` is not specified for an item, or two or more items have the same `SegmentIndex`, the item is placed in the next available free segment. 
 
 {% tabs %}
 {% highlight xaml %}
- <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />
- <navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" />
+ <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" IsOpen="True">
+ <navigation:SfRadialMenuItem Header="Item 2" SegmentIndex="1" />
  <navigation:SfRadialMenuItem Header="Item 5" SegmentIndex="4" /> 
  <navigation:SfRadialMenuItem Header="Item 1" SegmentIndex="0" />
  <navigation:SfRadialMenuItem Header="Item 6" SegmentIndex="5" />

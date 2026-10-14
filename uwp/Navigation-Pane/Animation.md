@@ -23,9 +23,7 @@ The content popup looks like fading in `ContentPopupAnimationTypes.Fade` mode
 
 {% highlight XAML %}
 
-<navigation:SfGroupBar PopupAnimation="Fade" VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+<navigation:SfGroupBar PopupAnimation="Fade" VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 
@@ -39,9 +37,7 @@ The content popup looks like scaling along X-axis in `ContentPopupAnimationTypes
 
 {% highlight XAML %}
 
-<navigation:SfGroupBar PopupAnimation="Scale" VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+<navigation:SfGroupBar PopupAnimation="Scale" VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 
@@ -55,9 +51,7 @@ No transition effects are applied in this `ContentPopupAnimationTypes.None` mode
 
 {% highlight XAML %}
 
-<navigation:SfGroupBar PopupAnimation="None" VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+<navigation:SfGroupBar PopupAnimation="None" VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 
@@ -71,9 +65,7 @@ Animation speed can be adjusted using the property `AnimationSpeed`. It is neces
 
 {% highlight XAML %}
 
-<navigation:SfGroupBar PopupAnimation="Fade" AnimationSpeed="500" VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+<navigation:SfGroupBar PopupAnimation="Fade" AnimationSpeed="500" VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Color Palette in UWP Radial Menu (SfRadialMenu)
 
-Color Palette can be formed in UWP Radial Menu with the Radial Color Items. 
+A color palette can be formed in the UWP Radial Menu using `SfRadialColorItem` objects. 
 
 {% tabs %}
 

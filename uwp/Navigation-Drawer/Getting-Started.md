@@ -13,13 +13,13 @@ The following section helps you to build your application with UWP Navigation Dr
 
 ## Steps
 
-* Create new Universal Windows Platform project using Visual Studio.For more [details](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
+* Create a new Universal Windows Platform project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
 * Add the SfNavigationDrawer assembly to your application.
-* Initialize UWP Navigation Drawer control.
-* Adding content view to the UWP Navigation Drawer control.
-* Adding drawer view to the UWP Navigation Drawer control.
+* Initialize the UWP NavigationDrawer control.
+* Adding content view to the UWP NavigationDrawer control.
+* Adding drawer view to the UWP NavigationDrawer control.
 
-These steps were explained below for XAML.
+These steps are explained below for XAML.
 
 ## Create a simple UWP Navigation Drawer from XAML
 

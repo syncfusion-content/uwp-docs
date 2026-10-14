@@ -10,11 +10,11 @@ documentation: ug
 
 # Set Icons in UWP Menu (SfMenu)
 
-`SfMenuItem` allows to display an image on the left of the control. Icon for `SfMenuItem` can be set by providing the image source as a value for the `Icon` property of the `SfMenuItem`.
+`SfMenuItem` allows to display an image on the left of the control. The icon for `SfMenuItem` can be set by providing the image source as a value for the `Icon` property of the `SfMenuItem`.
 
 ## Adding Icon to SfMenuItem
 
-The Icon for `SfMenuItem` can be added by `Icon` property as shown in the following code snippet.
+The icon for `SfMenuItem` can be added by using the `Icon` property as shown in the following code snippet.
 
 {% tabs %}
 

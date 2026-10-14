@@ -122,9 +122,7 @@ public class ViewModel
 
 {
 
-private Observable
-
-Collection<Model> _collection;
+private ObservableCollection<Model> _collection;
 
 public ObservableCollection<Model> MenuCollection
 

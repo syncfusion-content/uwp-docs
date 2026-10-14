@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Appearance in UWP Masked TextBox (SfMaskedEdit)
 
-The appearance of the UWP Masked TextBox control can be customized by using the `BorderBrush` and `ErrorBorderBrush` property
+The appearance of the UWP Masked TextBox control can be customized by using the `BorderBrush` and `ErrorBorderBrush` properties.
 
 ## Border
 
@@ -17,7 +17,7 @@ The appearance of the UWP Masked TextBox control can be customized by using the 
 
 `BorderBrush` provides the border color for the UWP Masked TextBox.
 
-We can Customize the `BorderBrush` property as follows
+We can customize the `BorderBrush` property as follows.
 
 {% tabs %}
 
@@ -42,9 +42,9 @@ maskededit.BorderBrush = Brushes.Blue;
 ### ErrorBorderBrush
 
 
-`ErrorBorderBrush` provide the border color for the UWP Masked TextBox when validation becomes failed.
+`ErrorBorderBrush` provides the border color for the UWP Masked TextBox when validation fails.
 
-We can Customize the ErrorBorderBrush property as follows
+We can customize the `ErrorBorderBrush` property as follows.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ maskededit.ErrorBorderBrush = Brushes.DarkOrange;
 ## ShowPromptOnFocus
 
 
-When the `ShowPromptOnFocus` is set to true, prompt characters are ignored when control loses focus. Again, the prompt characters are restored when the control is focused
+When the `ShowPromptOnFocus` is set to true, prompt characters are ignored when the control loses focus. Again, the prompt characters are restored when the control is focused.
 
 ### Example
 
