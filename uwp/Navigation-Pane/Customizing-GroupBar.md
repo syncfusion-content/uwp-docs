@@ -17,9 +17,7 @@ Set the property `CollapsedWidth` to set Width of UWP Navigation Pane control in
 
 {% highlight XAML %}
 
-<navigation:SfGroupBar CollapsedWidth="45" VerticalAlignment="Stretch">
-
-<navigation:SfGroupBar/>
+<navigation:SfGroupBar CollapsedWidth="45" VerticalAlignment="Stretch"/>
 
 {% endhighlight %}
 

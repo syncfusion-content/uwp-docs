@@ -42,13 +42,13 @@ RegEx</td><td>
 
 ### Simple Mask
 
-If MaskType set as Simple, Mask can be created using Simple Mask Elements
+If MaskType is set as Simple, Mask can be created using Simple Mask Elements.
 
 Example: Date
 
 Mask = "00/00/0000";
 
-In the above example, we can create Mask for Date  ("dd/mm/yyyy") format. It will accept only digits. So that element '0' is used and the literal '/' is used.
+In the above example, we can create a Mask for a Date ("dd/mm/yyyy") format. It will accept only digits. So the element '0' is used and the literal '/' is used.
 
 {% tabs %}
 
@@ -59,9 +59,9 @@ In the above example, we can create Mask for Date  ("dd/mm/yyyy") format. It wil
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType=MaskType.Simple;
-maskedEdit.Mask="00/00/0000";
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
+maskedEdit.Mask = "00/00/0000";
 
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ maskedEdit.Mask="00/00/0000";
 
 ### Regular Mask
 
-If MaskType set as Regular, Mask can be created using Regular Mask Elements
+If MaskType is set as Regular, Mask can be created using Regular Mask Elements.
 
 Example: Phone Number
 
@@ -92,8 +92,8 @@ In the above example, we can create a mask for Phone Number("(123)-456-7890"). I
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.Regular;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Regular;
 maskedEdit.Mask = "(\d{0,3})\d{3}-\d{2}-\d{2}";
 
 {% endhighlight %}
@@ -106,13 +106,13 @@ maskedEdit.Mask = "(\d{0,3})\d{3}-\d{2}-\d{2}";
 
 ### RegEx Mask
 
-If MaskType set as RegEx, Mask can be created using RegEx Mask Elements
+If MaskType is set as RegEx, Mask can be created using RegEx Mask Elements.
 
 Example : Email ID
 
 Mask ="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}"
 
-In the above example, we can create a mask for Mail ID. It will accept both alphabets and digits. So that element `A-Z a-z 0-9` is used. For accepting any number of characters  element '[ ]' is used and the literal '@' and '.' is used.
+In the above example, we can create a mask for an Email ID. It will accept both alphabets and digits. So the character set `[A-Za-z0-9]` is used. For accepting any number of characters, the element '+' is used and the literals '@' and '.' are used.
 
 {% tabs %}
 
@@ -123,8 +123,8 @@ In the above example, we can create a mask for Mail ID. It will accept both alph
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.RegEx;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.RegEx;
 maskedEdit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 
 {% endhighlight %}
@@ -152,8 +152,8 @@ The following example shows how to set the `Value` directly in UWP Masked TextBo
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.Simple;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
 maskedEdit.Mask = "00/00/0000";
 maskedEdit.Value = "14/11/2014";
 
@@ -191,14 +191,14 @@ Occurs when the value of the `Value` property is changed by either entering the 
 
 {% highlight xaml %}
 
-<Input:SfMaskedEdit MaskType="Simple" Mask="00/00/0000"  Value="14/11/2014" Width="255" Height="46" ValueChanged="sfMaskedEdit_ValueChanged"/>
+<Input:SfMaskedEdit MaskType="Simple" Mask="00/00/0000" Value="14/11/2014" Width="255" Height="46" ValueChanged="sfMaskedEdit_ValueChanged"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();	
-maskededit.ValueChanged += SfMaskedEdit_ValueChanged;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.ValueChanged += SfMaskedEdit_ValueChanged;
 
 private void SfMaskedEdit_ValueChanged(object sender, EventArgs e)
 {
@@ -225,8 +225,8 @@ The watermark will prompt you with instructions or important information when it
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.Simple;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
 maskedEdit.Mask = "00/00/0000";
 maskedEdit.Watermark = "Type here";
 

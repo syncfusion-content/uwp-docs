@@ -9,14 +9,14 @@ documentation: ug
 
 # Events and Methods in UWP Navigation Drawer (SfNavigationDrawer)
 
-The below two events are implemented in Transition.
+The SfNavigationDrawer control exposes the following two events, which are raised when the drawer is opened or closed:
 
 * Opened
 * Closed
 
 ## Opened
 
-Opened event will be raised when the DrawerContentView is opened in UWP Navigation Drawer.
+The Opened event will be raised when the DrawerContentView is opened in the UWP NavigationDrawer.
 
 
   {% highlight c# %}
@@ -27,7 +27,7 @@ Opened event will be raised when the DrawerContentView is opened in UWP Navigati
 
 ## Closed
 
-Closed event will be raised when the DrawerContentView is closed in UWP Navigation Drawer.
+The Closed event will be raised when the DrawerContentView is closed in the UWP NavigationDrawer.
 
 
 

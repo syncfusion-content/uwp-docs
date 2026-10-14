@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP Masked TextBox (SfMaskedEdit)
 
-This section explains how to create new project in Visual Studio using [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) control.
+This section explains how to create a new project in Visual Studio using the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) control.
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfmaskededit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) in any application.
@@ -17,23 +17,23 @@ Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-depe
 You can refer this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
 
 ## Creating Application with UWP Masked TextBox
-In this walk through, user will create a UWP application that contains [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
+In this walkthrough, the user will create a UWP application that contains the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
-## Creating project 
-Below section provides detailed information to create new project in Visual Studio to display [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
+## Creating project
+The below section provides detailed information to create a new project in Visual Studio to display the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
 
 ## Adding control via designer
-The [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
+The [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assemblies will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/Getting-Started_img2.png)
 
 ## Adding control manually in XAML
 
-In order to add [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in XAML, do the below steps,
+In order to add the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -66,21 +66,21 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.SfInput">
 
 ## Adding control manually in C#
 
-In order to add [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in C#, do the below steps,
+In order to add the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
 
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP
 
-2. Import SfMaskedEdit namespace **Syncfusion.UI.Xaml.Controls.Input**.
+2. Import the SfMaskedEdit namespace **Syncfusion.UI.Xaml.Controls.Input**.
 
-3. Create SfMaskedEdit instance and add it to the page.
+3. Create a SfMaskedEdit instance and add it to the page.
 
 {% tabs %}
 {% highlight C# %}
 
-SfMaskedEdit sfMaskdeEdit1 = new SfMaskedEdit()
+SfMaskedEdit sfMaskedEdit1 = new SfMaskedEdit()
 {
     HorizontalAlignment = HorizontalAlignment.Center,
     VerticalAlignment = VerticalAlignment.Center,
@@ -92,7 +92,7 @@ SfMaskedEdit sfMaskdeEdit1 = new SfMaskedEdit()
 {% endhighlight %}
 {% highlight VB %}
 
-Dim sfMaskdeEdit1 As SfMaskedEdit = New SfMaskedEdit() With {
+Dim sfMaskedEdit1 As SfMaskedEdit = New SfMaskedEdit() With {
     .HorizontalAlignment = HorizontalAlignment.Center,
     .VerticalAlignment = VerticalAlignment.Center,
     .Height = 30,
@@ -107,9 +107,9 @@ Dim sfMaskdeEdit1 As SfMaskedEdit = New SfMaskedEdit() With {
 
 ## Adding Mask to the control
 
-To mask the input of [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html),  we must set [MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.MaskType.html) and [Mask](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Mask) property.
+To mask the input of the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html), we must set the [MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.MaskType.html) and [Mask](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Mask) properties.
 
-`MaskType` has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as Simple, Regular and RegEx.
+`MaskType` has a different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as Simple, Regular and RegEx.
 
 Using the `Mask` property, you can specify input without writing any custom validation logic in your application. Mask can be set based on `MaskType` elements. The `Mask` property may contain literals and special mask characters. You can use the back-slash character to escape any special mask characters so that they are displayed as literals.
 
@@ -123,9 +123,9 @@ Using the `Mask` property, you can specify input without writing any custom vali
 
 {% highlight c# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType=MaskType.Simple;
-maskedEdit.Mask="00/00/0000";
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
+maskedEdit.Mask = "00/00/0000";
 
 {% endhighlight %}
 
@@ -135,7 +135,7 @@ N> [MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Inp
 
 ## Assigning Value to the control
 
-Value of [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be set by [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Value) property. By default, the Value property of [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) holds the characters without including the prompt characters and the literals defined in the mask. You can alter this and allow the value to hold literal and prompt characters by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_ValueMaskFormat) property of the control.
+The value of the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be set by the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Value) property. By default, the Value property of the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) holds the characters without including the prompt characters and the literals defined in the mask. You can alter this and allow the value to hold literal and prompt characters by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_ValueMaskFormat) property of the control.
 
 {% tabs %}
 
@@ -147,11 +147,11 @@ Value of [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.X
 
 {% highlight c# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType=MaskType.Simple;
-maskededit.ValueMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-maskedEdit.Mask="00/00/0000";
-maskedEdit.Value="14/11/2014";
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
+maskedEdit.ValueMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+maskedEdit.Mask = "00/00/0000";
+maskedEdit.Value = "14/11/2014";
 
 {% endhighlight %}
 
@@ -159,10 +159,10 @@ maskedEdit.Value="14/11/2014";
 
 ## Validation of Value
 
-You can customize how [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) should behave when invalid input is entered using [ValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_ValidationMode) property. The following values can be set to ValidationMode property,
+You can customize how the [UWP Masked TextBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) should behave when invalid input is entered using the [ValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_ValidationMode) property. The following values can be set to the ValidationMode property,
 
-* `KeyPress` - Validation of value takes places on every key press.
-* `LostFocus` - validation of value takes place when focus is lost from UWP Masked TextBox.
+* `KeyPress` - Validation of value takes place on every key press.
+* `LostFocus` - Validation of value takes place when focus is lost from the UWP Masked TextBox.
 
 {% tabs %}
 {% highlight XAML %}
@@ -188,8 +188,8 @@ You can set watermark for [UWP Masked TextBox](https://help.syncfusion.com/cr/uw
 
 {% highlight c# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.Simple;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
 maskedEdit.Mask = "00/00/0000";
 maskedEdit.Watermark = "Type here";
 

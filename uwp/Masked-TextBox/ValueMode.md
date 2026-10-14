@@ -25,7 +25,7 @@ The `Value` property returns only the text entered by the user. It does not incl
 
 {% highlight xaml %}
 
-<Input:SfMaskedEdit x:Name=sfMaskedEdit Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="ExcludePromptAndLiterals"/>
+<Input:SfMaskedEdit x:Name="sfMaskedEdit" Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="ExcludePromptAndLiterals"/>
 
 <Label Content="{Binding ElementName=sfMaskedEdit,Path=Value}" Width="230" Height="26"/ >
 
@@ -35,15 +35,15 @@ The `Value` property returns only the text entered by the user. It does not incl
 
 SfMaskedEdit maskededit = new SfMaskedEdit();
 
-maskededit.MaskType=MaskType.Simple;
+maskededit.MaskType = MaskType.Simple;
 
-maskededit.Mask="(000) 000-0000";
+maskededit.Mask = "(000) 000-0000";
 
-maskededit.ValueMaskFormat=ValueMaskFormat.ExcludePromptAndLiterals;
+maskededit.ValueMaskFormat = ValueMaskFormat.ExcludePromptAndLiterals;
 
 Label label = new Label();
 
-maskededit.ValueChanged += SfMaskedEdit_ValueChanged; 
+maskededit.ValueChanged += SfMaskedEdit_ValueChanged;
 
 private void SfMaskedEdit_ValueChanged(object sender, EventArgs e)
 {
@@ -56,7 +56,7 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before Entering the input:  It excludes prompt and literals
+Before entering the input: It excludes prompt and literals
 
 ![Value_Mode_Img1](Value_Mode_Images/Value_Mode_Img1.jpg)
 
@@ -74,7 +74,7 @@ The `Value` property returns text entered by the user as well as the prompt char
 
 {% highlight xaml %}
 
-<Input:SfMaskedEdit x:Name=sfMaskedEdit Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="IncludePrompt"/>
+<Input:SfMaskedEdit x:Name="sfMaskedEdit" Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="IncludePrompt"/>
 
 <Label Content="{Binding ElementName=sfMaskedEdit,Path=Value}" Width="230" Height="26"/ >
 
@@ -84,15 +84,15 @@ The `Value` property returns text entered by the user as well as the prompt char
 
 SfMaskedEdit maskededit = new SfMaskedEdit();
 
-maskededit.MaskType=MaskType.Simple;
+maskededit.MaskType = MaskType.Simple;
 
-maskededit.Mask="(000) 000-0000";
+maskededit.Mask = "(000) 000-0000";
 
-maskededit.ValueMaskFormat=ValueMaskFormat.IncludePrompt;
+maskededit.ValueMaskFormat = ValueMaskFormat.IncludePrompt;
 
 Label label = new Label();
 
-maskededit.ValueChanged += SfMaskedEdit_ValueChanged; 
+maskededit.ValueChanged += SfMaskedEdit_ValueChanged;
 
 private void SfMaskedEdit_ValueChanged(object sender, EventArgs e)
 {
@@ -105,7 +105,7 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before Entering the input:  It excludes literals
+Before entering the input: It excludes literals
 
 ![Value_Mode_Img3](Value_Mode_Images/Value_Mode_Img3.jpg)
 
@@ -123,7 +123,7 @@ The `Value` property returns text entered by the user as well as any literal cha
 
 {% highlight xaml %}
 
-<Input:SfMaskedEdit x:Name=sfMaskedEdit Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="IncludeLiterals"/>
+<Input:SfMaskedEdit x:Name="sfMaskedEdit" Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="IncludeLiterals"/>
 
 <Label Content="{Binding ElementName=sfMaskedEdit,Path=Value}" Width="230" Height="26"/ >
 
@@ -133,11 +133,11 @@ The `Value` property returns text entered by the user as well as any literal cha
 
 SfMaskedEdit maskededit = new SfMaskedEdit();
 
-maskededit.MaskType=MaskType.Simple;
+maskededit.MaskType = MaskType.Simple;
 
-maskededit.Mask="(000) 000-0000";
+maskededit.Mask = "(000) 000-0000";
 
-maskededit.ValueMaskFormat=ValueMaskFormat.IncludeLiterals;
+maskededit.ValueMaskFormat = ValueMaskFormat.IncludeLiterals;
 
 Label label = new Label();
 
@@ -154,7 +154,7 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before Entering the input:  It excludes prompt 
+Before entering the input: It excludes prompt
 
 ![Value_Mode_Img5](Value_Mode_Images/Value_Mode_Img5.jpg)
 
@@ -172,7 +172,7 @@ The `Value` property returns text entered by the user as well as any literal cha
 
 {% highlight xaml %}
 
-<Input:SfMaskedEdit x:Name=sfMaskedEdit Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="IncludePromptAndLiterals"/>
+<Input:SfMaskedEdit x:Name="sfMaskedEdit" Width="255" Height="50" MaskType="Simple" Mask="(000) 000-0000" ValueMaskFormat="IncludePromptAndLiterals"/>
 
 <Label Content="{Binding ElementName=sfMaskedEdit,Path=Value}" Width="230" Height="26"/ >
 
@@ -182,11 +182,11 @@ The `Value` property returns text entered by the user as well as any literal cha
 
 SfMaskedEdit maskededit = new SfMaskedEdit();
 
-maskededit.MaskType=MaskType.Simple;
+maskededit.MaskType = MaskType.Simple;
 
-maskededit.Mask="(000) 000-0000";
+maskededit.Mask = "(000) 000-0000";
 
-maskededit.ValueMaskFormat=ValueMaskFormat.IncludePromptAndLiterals;
+maskededit.ValueMaskFormat = ValueMaskFormat.IncludePromptAndLiterals;
 
 Label label = new Label();
 
@@ -203,7 +203,7 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before Entering the input:  It excludes prompt and literals
+Before entering the input: It excludes prompt and literals
 
 ![Value_Mode_Img7](Value_Mode_Images/Value_Mode_Img7.jpg)
 

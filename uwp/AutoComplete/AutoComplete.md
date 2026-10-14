@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoComplete Feature in UWP SfTextBoxExt
 
-AutoComplete functionality provides suggestions to the user while typing. There are several modes of suggestions. The suggested text can be appended to the original text or it can be displayed in a drop-down list so that user can choose from different options.
+AutoComplete functionality provides suggestions to the user while typing. There are several modes of suggestions. The suggested text can be appended to the original text or it can be displayed in a drop-down list so that the user can choose from different options.
 
 ## AutoComplete Source
 
@@ -153,9 +153,9 @@ AutoCompleteSource="{Binding Employees}" />
 
 {% endtabs %}
 
-At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control to provide suggestions based on Name.
+At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control provide suggestions based on Name.
 
-SearchItemPath property specifies the property path by which the filtering has to be done.
+The `SearchItemPath` property specifies the property path by which the filtering has to be done.
 
 {% tabs %}
 
@@ -179,7 +179,7 @@ SearchItemPath="Name"
 
 ![AutoComplete_images](AutoComplete_images/AutoComplete_img1.png)
 
-N>  Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section.
+N>  Default value of the AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about AutoComplete modes will be provided in next section.
 
 
 
@@ -382,7 +382,7 @@ The way that the control filters the suggestions can be customized in several wa
 
 ## Suggestion Mode
 
-The property SuggestionMode helps to specify how to compare the string. It contains two built-in modes. 
+The property SuggestionMode helps to specify how to compare the string. It contains the following built-in modes. 
 
 1. None
 2. StartsWith
@@ -403,7 +403,7 @@ The default value is StartsWith.
 
 ### None
 
-The controls returns the entire collection without filtering when the user types text.
+The control returns the entire collection without filtering when the user types text.
 
 {% tabs %}
 
@@ -976,7 +976,7 @@ SuggestionMode="EqualsOrdinalCaseSensitive"
 
 ### Custom
 
-The control return all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
+The control returns all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
 
 {% tabs %}
 

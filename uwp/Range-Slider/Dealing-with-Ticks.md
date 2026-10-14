@@ -74,26 +74,26 @@ When the SnapsTo property is set to StepValues, the StepFrequency property is us
 
 {% endtabs %}
 
-## Snaps To 
+## Snaps To
 
 The SnapsTo property determines whether the UWP Range Slider snaps to steps or ticks. Available options for this property are 
 
-1. StepValues 
-2. Ticks 
+1. StepValues
+2. Ticks
 
-Default option is StepValues and StepFrequency property is used to specify the interval between snap points in this case. If the SnapsTo property is set to Ticks, the TickFrequency property is used to specify the interval between snap points.  
+The default option is StepValues, and the StepFrequency property is used to specify the interval between snap points in this case. If the SnapsTo property is set to Ticks, the TickFrequency property is used to specify the interval between snap points.
 
-## Tick Placement 
+## Tick Placement
 
-The TickPlacement property used to determine where to draw tick marks in relation to the track. Available options for this property are 
+The TickPlacement property is used to determine where to draw tick marks in relation to the track. Available options for this property are:
 
-1. BottomRight 
-2. Inline 
-3. None 
-4. Outside 
-5. TopLeft 
+1. BottomRight
+2. Inline
+3. None
+4. Outside
+5. TopLeft
 
-The default option is Inline.  
+The default option is Inline.
 
 
 
@@ -133,15 +133,15 @@ TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 N>  In Vertical Orientation, this option will place the ticks to right side. 
 
-### TopLeft  
+### TopLeft
 
-Tick marks placed either above the track in horizontal orientation or left of the track in vertical orientation. 
+Tick marks placed either above the track in horizontal orientation or left of the track in vertical orientation.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<editors:SfRangeSlider x:Name="rangeSlider" Width="200"  Minimum="0"   Maximum="100" TickFrequency="20" TickPlacement="TopLeft"  Value="40"   />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="TopLeft" Value="40" />
 
 {% endhighlight %}
 
@@ -168,15 +168,15 @@ Tick marks placed either above the track in horizontal orientation or left of th
 
 N>  In Vertical Orientation, this option will place the ticks to left side.
 
-### Outside 
+### Outside
 
-Tick marks placed on both sides of the track either in horizontal or vertical orientation.  
+Tick marks placed on both sides of the track either in horizontal or vertical orientation.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" TickFrequency="20"  TickPlacement="Outside" Value="40"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="Outside" Value="40"/>
 
 {% endhighlight %}
 
@@ -200,9 +200,9 @@ Tick marks placed on both sides of the track either in horizontal or vertical or
 
 ![TickPlacement Outside](Ticks_images/TickPlacementOutside.png)
 
-### Inline 
+### Inline
 
-Ticks are placed inside the track.  
+Ticks are placed inside the track.
 
 {% tabs %}
 
@@ -232,9 +232,9 @@ Ticks are placed inside the track.
 
 ![TickPlacement Inline](Ticks_images/TickPlacementInline.png)
 
-### None 
+### None
 
-Tick marks not appear.  
+Tick marks do not appear.
 
 {% tabs %}
 

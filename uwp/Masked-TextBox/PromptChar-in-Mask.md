@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Customizing PromptChar in UWP Masked TextBox (SfMaskEdit)
 
-Displays prompt character for the absence of your input in Mask and its default value is ‘_’.
+The `PromptChar` property displays a prompt character for the absence of your input in the mask, and its default value is ‘_’.
 
 ![PromptChar_In_Mask_Img1](PromptChar_In_Mask_Images/PromptChar_In_Mask_Img1.jpg)
 
 ## Custom PromptChar
 
-The following example shows how to customize the prompt character using `PromptChar` property
+The following example shows how to customize the prompt character using the `PromptChar` property.
 
 {% tabs %}
 
@@ -26,8 +26,8 @@ The following example shows how to customize the prompt character using `PromptC
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.Simple;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
 maskedEdit.Mask = "00/00/0000";
 maskedEdit.PromptChar = "*";
 

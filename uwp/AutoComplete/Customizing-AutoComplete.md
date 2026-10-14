@@ -70,7 +70,7 @@ namespace TextBoxExtSample
                 Text = "TextBox",
                 FontSize = 20,
                 FontWeight = Windows.UI.Text.FontWeights.Bold,
-                FontFamily = new FontFamily("Time New Roman"),
+                FontFamily = new FontFamily("Times New Roman"),
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
                 Width = 200
