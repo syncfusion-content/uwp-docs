@@ -9,9 +9,7 @@ documentation: ug
 
 # UWP Pull To Refresh (SfPullToRefresh) Overview
 
-## UWP Pull To Refresh (SfPullToRefresh) Overview
-
-SfPullToRefresh is a pullable panel which on pulling down the main content in order to refresh the data in the application application.  RefreshContent will be hidden and can be shown by swiping down on the main content and a refresh content, mainly a progress indicator or refresh indicator will be shown. The application will be refreshed once you have pulled down a certain distance.
+SfPullToRefresh is a pullable panel that refreshes the data in an application by pulling down the main content. `RefreshContent` will be hidden and can be shown by swiping down on the main content; a refresh content, mainly a progress indicator or refresh indicator, will be shown. The application will be refreshed once you have pulled down a certain distance.
 
 ## Use Case Scenarios
 
@@ -25,10 +23,10 @@ PullToRefresh controls are mainly used in applications where the user needs to r
 ## Key Features
 
 
-â€¢ `Transition`:Â Specifies the transition typeÂ ofÂ the `PullToRefresh`. 
+• `Transition`: Specifies the transition type of the `PullToRefresh`. 
 
-â€¢ `Position`: Specifies the position of the transition to take place. 
+• `Position`: Specifies the position of the transition to take place. 
 
-â€¢ `Refresh()`: `Refresh()` refreshes the content being viewed.
+• `Refresh()`: `Refresh()` refreshes the content being viewed.
 
 ![Overview_img1](Overview_images/Overview_img1.png)

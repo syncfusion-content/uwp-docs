@@ -11,19 +11,19 @@ documentation: ug
 
 ## Create your first SfPullToRefresh in Universal Windows Platform
 
-This section encompasses on how to create a PullToRefresh that lets you to refresh the current content of the application. 
+This section explains how to create a PullToRefresh that lets you refresh the current content of the application.
 
 `SfPullToRefresh` is available in the following assembly and namespace:
 
-Assembly: `Syncfusion.SfPullToRefresh.UWP`
+Assembly: `Syncfusion.SfPullToRefresh.UWP`
 
-Namespace: `Syncfusion.UI.Xaml.PullToRefresh`
+Namespace: `Syncfusion.UI.Xaml.PullToRefresh`
 
 Refer to the following code to add the SfPullToRefresh control:
 
 {% tabs %}
 
-{%highlight Xaml%}
+{% highlight Xaml %}
 
     <Page
     x:Class="PullToRefresh.MainPage"
@@ -37,9 +37,9 @@ Refer to the following code to add the SfPullToRefresh control:
 
 {%endhighlight%}
 
-{% highlight c# %}
+{% highlight C# %}
 
-    SfPullToRefresh pullToRefresh = new SfPullToRefresh();
+    SfPullToRefresh pullToRefresh = new SfPullToRefresh();
 
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ There are three built-in events in the PullToRefresh control namely:
 
 ## Pulling
 
-`Pulling` event is triggered when we start pulling down the PullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
+`Pulling` event is triggered when we start pulling down the PullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0. The arguments for the event are:
 
 * SfPullToRefresh
 * Progress
@@ -139,11 +139,11 @@ There are three built-in events in the PullToRefresh control namely:
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" Refreshed="pullToRefresh_Refreshed" />
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Refreshed="pullToRefresh_Refreshed" />
 
 {%endhighlight%}
 
-{% highlight c# %}
+{% highlight C# %}
 
     private async void pullToRefresh_Refreshed(object sender)
     {
