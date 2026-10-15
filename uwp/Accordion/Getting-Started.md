@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP Accordion
 
-This section explains how to create a long list of expandable items using UWP Accordion control.
+This section explains how to create a list of expandable items using the UWP Accordion control.
 
 ## Adding UWP Accordion Control
 
