@@ -13,9 +13,9 @@ Spell checking operation can be done on Text editor controls through `UWP Spell 
 
 The following steps helps to add `UWP Spell Checker`.
 
-1 . Create a UWP project in Visual Studio and include `Syncfusion.SfSpellChecker.UWP` assembly.
+1. Create a UWP project in Visual Studio and include `Syncfusion.SfSpellChecker.UWP` assembly.
 
-2 . Create an instance of `UWP Spell Checker` using “Syncfusion.UI.Xaml.Controls” namespace.
+2. Create an instance of `UWP Spell Checker` using "Syncfusion.UI.Xaml.Controls" namespace.
 
 {% tabs %}
 
@@ -27,35 +27,41 @@ Syncfusion.UI.Xaml.Controls.SfSpellChecker spellChecker = new Syncfusion.UI.Xaml
 
 {% endtabs %}
 
-3 . Create instance of Button and TextBox to input control for SpellCheck.
+3. Create instance of Button and TextBox to input control for SpellCheck.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<Page
+    x:Class="SpellCheckerSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SpellCheckerSample">
 
-<TextBox x:Name="Textbox" TextWrapping="Wrap" VerticalContentAlignment="Top"
-         Text="Ribbn illustrats the Microsoft illustrats Offce 2007 UI.
-         Our prduct exposes most of the featres of the new UI and eeps intact
-         winhth the Slverlight architecture. Configuring and designing
-         the layout is very easy through XAML code.
-         Ribbon tabs and Ribbon bars are the main client area in Ribbon.
-         Ribbon tabs will allow your end users to navigate and find the
-         appropriate tools for the task at hand. The Ribbon bars will
-         contain the Ribbon tools." VerticalAlignment="Stretch" />
-         
-<Button HorizontalAlignment="Left"  Content="Spell Check" Click="Button_Click" >
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-</Button>
+        <TextBox x:Name="Textbox" TextWrapping="Wrap" VerticalContentAlignment="Top"
+                 Text="Ribbn illustrats the Microsoft illustrats Offce 2007 UI.
+                 Our prduct exposes most of the featres of the new UI and eeps intact
+                 winhth the Slverlight architecture. Configuring and designing
+                 the layout is very easy through XAML code.
+                 Ribbon tabs and Ribbon bars are the main client area in Ribbon.
+                 Ribbon tabs will allow your end users to navigate and find the
+                 appropriate tools for the task at hand. The Ribbon bars will
+                 contain the Ribbon tools." VerticalAlignment="Stretch" />
 
-</Grid>
+        <Button HorizontalAlignment="Left" Content="Spell Check" Click="Button_Click" />
+
+    </Grid>
+
+</Page>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-4 . Inherit `IEditorProperties` interface of `UWP Spell Checker` and Initialize all the methods and properties in interface.
+4. Inherit `IEditorProperties` interface of `UWP Spell Checker` and Initialize all the methods and properties in interface.
 
 {% tabs %}
 
@@ -153,7 +159,7 @@ public bool HasMoreTextToCheck()
 
 {
 
-return false;
+return !string.IsNullOrEmpty(textbox.SelectedText) || textbox.Text.Length > 0;
 
 }
 
@@ -169,8 +175,6 @@ public void UpdateTextField()
 
 {
 
-throw new NotImplementedException();
-
 }
 
 }
@@ -179,7 +183,7 @@ throw new NotImplementedException();
 
 {% endtabs %}
 
-5 . In Click event of button call SpellCheck method to TextBox.
+5. In Click event of button call SpellCheck method to TextBox.
 
 {% tabs %}
 
@@ -189,7 +193,9 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 {
 
-SpellChecker.PerformSpellCheckUsingDialog(Editor);
+TextSpellEditor Editor = new TextSpellEditor(Textbox);
+
+spellChecker.PerformSpellCheckUsingDialog(Editor);
 
 }
 
@@ -198,8 +204,8 @@ SpellChecker.PerformSpellCheckUsingDialog(Editor);
 
 {% endtabs %}
 
-![getting-started](getting-started-images/getting-started.jpeg)
+![SfSpellChecker dialog showing suggestions](getting-started-images/getting-started.jpeg)
 
 
-6 . Selected word in suggestion list can be replaced click Replace button in the spell check dialog.
+6. Selected word in suggestion list can be replaced by clicking the Replace button in the spell check dialog.
 

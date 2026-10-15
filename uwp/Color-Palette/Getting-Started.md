@@ -21,7 +21,7 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 
 ### Adding UWP Color Palette Control through XAML
 
-1.Include the namespace for Syncfusion.SfSfColorPickers.UWP assembly in MainPage.xaml
+1.Include the namespace for Syncfusion.SfColorPickers.UWP assembly in MainPage.xaml
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media">
 
 ### Adding UWP Color Palette Control through Code-behind
 
-1.Include the namespace for Syncfusion. SfSfColorPickers.UWP assembly in MainPage.xaml.cs
+1.Include the namespace for Syncfusion.SfColorPickers.UWP assembly in MainPage.xaml.cs
 
 {% tabs %}
 
@@ -87,4 +87,4 @@ Dim colorPalette As New SfColorPalette()
 
 {% endtabs %}
 
-![SfColorPalette control](SfColorPalette-images/SfColorPalette-img1.jpeg)
+![SfColorPalette control with predefined color swatches](SfColorPalette-images/SfColorPalette-img1.jpeg)

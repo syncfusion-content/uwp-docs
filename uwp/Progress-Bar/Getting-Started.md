@@ -55,6 +55,18 @@ Select a type from the available built-in progress bar types and set it using `P
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfProgressBar progressBar = new SfProgressBar() { ProgressType = ProgressTypes.SolidCircular };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim progressBar As New SfProgressBar() With {.ProgressType = ProgressTypes.SolidCircular}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Displaying Percentage Value
@@ -66,6 +78,25 @@ Set the property `DisplayContentMode` to Percentage for enabling text displaying
 {% highlight XAML %}
 
 <notification:SfProgressBar x:Name="progressBar" ProgressType="SolidCircular"  DisplayContentMode="Percentage"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfProgressBar progressBar = new SfProgressBar()
+{
+    ProgressType = ProgressTypes.SolidCircular,
+    DisplayContentMode = DisplayContentMode.Percentage
+};
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim progressBar As New SfProgressBar() With {
+    .ProgressType = ProgressTypes.SolidCircular,
+    .DisplayContentMode = DisplayContentMode.Percentage
+}
 
 {% endhighlight %}
 
@@ -115,9 +146,9 @@ void timer_Tick(object sender, object e)
 
 {
 
-if(progressBar.Value <=100.0)
+if(progressBar.Value <= 100.0)
 
-progressBar.Value += 1.0;
+    progressBar.Value += 1.0;
 
 else
 {

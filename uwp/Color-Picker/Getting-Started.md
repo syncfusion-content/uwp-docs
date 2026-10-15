@@ -23,7 +23,7 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 
 ### Adding UWP Color Picker Control through XAML
 
-1.Include the namespace for Syncfusion.SfSfColorPickers.UWP assembly in MainPage.xaml
+1.Include the namespace for Syncfusion.SfColorPickers.UWP assembly in MainPage.xaml
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media">
 
 ### Adding UWP Color Picker Control through Code-Behind
 
-1.Include the namespace for Syncfusion. SfSfColorPickers.UWP assembly in MainPage.xaml.cs
+1.Include the namespace for Syncfusion.SfColorPickers.UWP assembly in MainPage.xaml.cs
 
 {% tabs %}
 
@@ -89,4 +89,4 @@ Dim colorPicker As New SfColorPicker()
 
 {% endtabs %}
 
-![Overview of SfColorPicker control](Overview-images/Overview-img1.jpeg)
+![SfColorPicker control overview](Overview-images/Overview-img1.jpeg)

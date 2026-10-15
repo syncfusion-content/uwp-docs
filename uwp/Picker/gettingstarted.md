@@ -16,28 +16,23 @@ This section explains you the steps to configure a UWP Picker control in a rea
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
-* Syncfusion. SfInput.UWP
-
+* Syncfusion.SfInput.UWP
 * Syncfusion.SfShared.UWP
-
-### Create a simple UWP Picker
-
-This section explains how to create simple UWP Picker control and configure it. It can configure using C# code. 
-
-### Create the UWP project 
-
-Create new blank project (Universal Windows) using Visual Studio for UWP project. 
 
 ### Adding UWP Picker in UWP project
 
-1. Add the required assembly reference in UWP and other renderer projects as discussed in **Adding** **UWP Picker** **reference** section.
-2. Add UWP Picker control two way XAML and C#.
-* XAML Page
-  * Set UWP Picker control namespace as `xmlns:syncfusion=using:Syncfusion.UI.Xaml.Controls.Input;` `assembly=Syncfusion.SfInput.UWP;` in XAML Content page.
-  * Set the UWP Picker control in Content property of ContentPage.
-* C# Page
-  * Import UWP Picker control namespace as `using Syncfusion.UI.Xaml.Controls.Input;` in C# ContentPage.
-  * Create new UWP Picker instance in ContentPage constructor and assign its instance to ContentPage Content property.
+1. Add the required assembly reference to the project.
+2. Add the UWP Picker control using XAML or C# as shown below.
+
+**XAML**
+
+* Declare the UWP Picker namespace `xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input"` in the XAML page.
+* Place the UWP Picker control inside the page content.
+
+**C#**
+
+* Import the UWP Picker namespace `using Syncfusion.UI.Xaml.Controls.Input;` in the code-behind.
+* Create a new `SfPicker` instance in the constructor and assign it to the page content.
 
 {% tabs %}
 
@@ -94,7 +89,7 @@ Create new blank project (Universal Windows) using Visual Studio for UWP project
 
 ### Set Header to the UWP Picker
 
-UWP Picker allows you to define header text by setting the `SfPicker.ColumnHeaderText` and enable its header by setting `SfPicker.ShowColumnHeader` property to true. Default value of `SfPicker.ShowColumnHeader` is True.
+UWP Picker allows you to set a header for the picker using the `Header` property. The header appears at the top of the picker.
 
 {% tabs %}
 
@@ -217,7 +212,7 @@ UWP Picker control is a data bounded control. Hence you must create collection o
 
 * Binding the Collection to UWP Picker
 
-UWP Picker allow you to bind collection of data’s by setting `SfPicker.ItemsSource` property. You can bind the collection of data’s in C#.
+UWP Picker allows you to bind a collection of data by setting the `SfPicker.ItemsSource` property. You can bind the collection of data in C#.
 
 {% tabs %}
 
@@ -261,11 +256,11 @@ UWP Picker allow you to bind collection of data’s by setting `SfPicker.ItemsSo
 
             SfPicker picker = new SfPicker();
 
-            ColorInfo color info = new ColorInfo();
+            ColorInfo colorInfo = new ColorInfo();
 
-            this.DataContext = color info;
+            this.DataContext = colorInfo;
 
-            picker.ItemsSource = color info.Colors;
+            picker.ItemsSource = colorInfo.Colors;
 
             this.Content = picker;
 

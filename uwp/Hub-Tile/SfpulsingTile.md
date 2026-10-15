@@ -176,7 +176,7 @@ pulsingTile.Content = New Image() With {
 
 ## Configuring the tile
 
-`SfSplitMosaicTile` can be configured with header and images as follows:
+`SfPulsingTile` can be configured with header and images as follows:
 
 ### Setting the header
 

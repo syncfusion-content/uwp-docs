@@ -59,6 +59,6 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-Above code example creates the UWP Calculator as follows and perform mathematical arithmetic operations using the provided buttons:
+Above code example creates the UWP Calculator as follows and performs mathematical arithmetic operations using the provided buttons:
 
-![SfCalculator](SfCalculator-images/SfCalculator-img1.jpeg)
+![SfCalculator control](SfCalculator-images/SfCalculator-img1.jpeg)
