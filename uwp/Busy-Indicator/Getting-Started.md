@@ -56,7 +56,7 @@ Dim busyIndicator As New SfBusyIndicator()
 
 {% endtabs %}
 
-![SfBusyIndicator with default WinRT animation](SfBusyIndicator1/Winrt.png)
+![SfBusyIndicator with Winmil spinning animation](SfBusyIndicator1/Winrt.png)
 
 ## Choosing Animation
 
