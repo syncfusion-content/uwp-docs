@@ -29,13 +29,13 @@ Set the Content property to display a content with both dropdown open and close.
 
 {% highlight C# %}
 
-dropDownButton.Content =" 5 / 24 / 2016";
+dropDownButton.Content = "5/24/2016";
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-dropDownButton.Content =" 5 / 24 / 2016"
+dropDownButton.Content = "5/24/2016"
 
 {% endhighlight %}
 

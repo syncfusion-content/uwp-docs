@@ -11,9 +11,9 @@ documentation: ug
 
 The UWP Range Slider control supports to select range of value using two Thumbs.  
 
-## ShowRange  
+## ShowRange
 
-When ShowRange property is set to true, two Thumbs are placed in the track. One Thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
+When the ShowRange property is set to true, two thumbs are placed in the track. One thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
 
 {% tabs %}
 
@@ -43,9 +43,9 @@ When ShowRange property is set to true, two Thumbs are placed in the track. One 
 
 ![RangeSlider ShowRange view](Range_images/Range_img1.jpg)
 
-## RangeStart  
+## RangeStart
 
-Gets or sets the start value of the range start.  
+Gets or sets the start value of the range.  
 
 {% tabs %}
 
@@ -75,9 +75,9 @@ Gets or sets the start value of the range start.
 
 ![RangeSlider RangeStart view](Range_images/Range_img2.jpg)
 
-## RangeEnd 
+## RangeEnd
 
-Gets or sets the end value of the range end.  
+Gets or sets the end value of the range.  
 
 {% tabs %}
 

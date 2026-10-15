@@ -44,7 +44,7 @@ LabelOrientation specifies the orientation of the labels as either horizontal or
 
 ## CustomLabels
 
-CustomLabels is an observable collection of items which contains the Label and Value properties. We have to create an observable collection of items by specifying the custom labels for corresponding values as shown in the following code sample:
+CustomLabels is an observable collection of items which contains the `Label` and `Value` properties. We have to create an observable collection of items by specifying the custom labels for corresponding values as shown in the following code sample:
 
 {% tabs %}
 

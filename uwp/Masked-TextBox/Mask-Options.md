@@ -9,7 +9,7 @@ documentation: ug
 
 # Mask Options in UWP Masked TextBox (SfMaskedEdit)
 
-Each `MaskType` has different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
+Each `MaskType` has a different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
 
 1. Simple
 2. Regular
@@ -76,8 +76,8 @@ Shift up. Converts all the characters that follow to uppercase.</td></tr>
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType=MaskType.Simple;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Simple;
 maskedEdit.Mask="00/00/0000";
 
 {% endhighlight %}
@@ -90,7 +90,7 @@ maskedEdit.Mask="00/00/0000";
 
 ## Regular
 
-Regular mask supports simple regular expression with below listed elements. 
+Regular mask supports simple regular expressions with the below listed elements.
 
 ### Regular mask elements
 
@@ -144,8 +144,8 @@ Accepts the input for zero or more times.</td></tr>
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.Regular;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.Regular;
 maskedEdit.Mask = "(\d{0,3})\d{3}-\d{2}-\d{2}";
 
 {% endhighlight %}
@@ -309,8 +309,8 @@ For example: The following code example shows the validation for E-mail using Re
 
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.RegEx;
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.RegEx;
 maskedEdit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 
 {% endhighlight %}

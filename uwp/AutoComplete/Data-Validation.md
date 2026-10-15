@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Validation in UWP AutoComplete (SfTextBoxExt)
 
-All editors have the data validation support, it can be done by inheriting the model class from the Syncfusion.UI.Xaml.Controls.Data.IDataValidation.
+All editors have the data validation support. It can be done by inheriting the model class from the Syncfusion.UI.Xaml.Controls.Data.IDataValidation interface.
 
 ![Data Validation](Data-Validation_images/Data-Validation_img1.png)
 
@@ -162,8 +162,10 @@ Public Class DataValidationHelper
 
 			End If
 
+
+			Return ""
+
 		End Get
-		 Return ""
 
 	End Property
 

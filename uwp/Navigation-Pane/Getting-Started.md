@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP Navigation Pane (SfGroupBar)
 
-This section explains how to add `SfGroupBarItem` and set it’s content in `UWP Navigation Pane`. 
+This section explains how to add `SfGroupBarItem` and set its content in `UWP Navigation Pane`.
 
 ## Adding UWP Navigation Pane Control
 

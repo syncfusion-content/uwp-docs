@@ -2,7 +2,7 @@
 layout: post
 title: Customization in UWP Pull To Refresh control | Syncfusion
 description: Learn here all about Customization support in Syncfusion UWP Pull To Refresh (SfPullToRefresh) control and more.
-platform: UWP
+platform: uwp
 control: PullToRefresh
 documentation: ug
 --- 
@@ -85,7 +85,7 @@ The Transition property specifies the animations for the RefreshContent. Transit
 * `SlideOnTop`
 * `Push`
 
-The default transition is `SlideOnTop`. That draws the `RefreshContent` on top of the `PullableContent`.
+The default transition is `SlideOnTop`, which draws the `RefreshContent` on top of the `PullableContent`.
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ The following code example shows how to set `Transition` as `Push` to SfPullToRe
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" Transition="Push" />
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Transition="Push" />
 
 {%endhighlight%}
 
@@ -129,11 +129,11 @@ The following code example shows how to set `Transition` as `Push` to SfPullToRe
 
 ## PullDirection
 
-PullDirection property specifies the position of the transition to take place.PullDirection property has the following two options:
+`PullDirection` property specifies the position of the transition to take place. `PullDirection` property has the following two options:
 * `Top`
 * `Bottom`
 
-The default PullDirection is `Top`. That draws the `RefreshContent` on top of the `pullableContent`.
+The default `PullDirection` is `Top`, which draws the `RefreshContent` at the top of the `PullableContent`.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ The default PullDirection is `Top`. That draws the `RefreshContent` on top of th
 {% endtabs %}
 
 
-The following code example shows how to set `PullDirection` as `Bottom` to SfPullToRefresh.That draws the `RefreshContent` on Bottom of the `pullableContent`.
+The following code example shows how to set `PullDirection` as `Bottom` to SfPullToRefresh, which draws the `RefreshContent` at the bottom of the `PullableContent`.
 
 {% tabs %}
 

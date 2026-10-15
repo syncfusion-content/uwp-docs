@@ -121,9 +121,9 @@ Tooltip placed either above the Thumb in horizontal orientation or left of the T
 
 N>  This option will show tooltip to left in vertical orientation.
 
-### None 
+### None
 
-Tooltip will not appear. 
+Tooltip will not appear.
 
 ![RangeSlider Tooltip None view](Thumb-ToolTip_images/Thumb-ToolTip_img7.jpg)
 

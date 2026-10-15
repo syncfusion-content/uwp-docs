@@ -9,11 +9,11 @@ documentation: ug
 
 # About Syncfusion® UWP Carousel Control
 
-UWP Carousel control provides a rich animated layout to arrange items in touch device.
+The UWP Carousel control provides a rich, animated layout to arrange items on a device with touch support.
 
 ## Features
 
 * Accepts any type of business object
-* Rotation and transformation options makes animation richer
-* Offsets can be set to items to arrange them in modular way
+* Rotation and transformation options make the animation richer
+* Offsets can be set on items to arrange them in a modular way
 

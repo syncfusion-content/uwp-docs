@@ -13,17 +13,17 @@ The `SfMenu` control can align its content vertically and horizontally by using 
 
 ## Change Orientation of SfMenuItem
 
-Items of `SfMenu` arranged horizontally, when the value of the `Orientation` property is set to Horizontal.
+Items of `SfMenu` are arranged horizontally when the value of the `Orientation` property is set to Horizontal.
 
 ![Orientation-img1](Orientation-images/Orientation-img1.jpg)
 
 
-Similarly, when the value of the `Orientation` property is set to Vertical, the Items of `SfMenu` will be arranged vertically.
+Similarly, when the value of the `Orientation` property is set to Vertical, the items of `SfMenu` will be arranged vertically.
 
 ![Orientation-img2](Orientation-images/Orientation-img2.jpg)
 
 
-`Orientation` of `SfMenu` can be changed as mentioned in the code snippet.
+The `Orientation` of `SfMenu` can be changed as mentioned in the code snippet.
 
 {% tabs %}
 

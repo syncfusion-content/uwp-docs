@@ -9,4 +9,4 @@ documentation: ug
 
 # Labels in UWP Radial Slider (SfRadialSlider)
 
-Labels are the numerical representation of the ticks starting from Minimum to Maximum. The frequency of the labels also controlled by TickFrequency property. 
+Labels are the numerical representation of the ticks starting from Minimum to Maximum. The frequency of the labels is also controlled by the TickFrequency property.

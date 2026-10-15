@@ -13,7 +13,7 @@ The control will prompt the user with some information, when it is not in focus 
 
 ## Using the Watermark
 
-Watermark property allows the users to specify some information, when the text is empty. For illustration let us create a simple SfTextBoxExt, where the user is asked to enter names separated by a comma,
+The `Watermark` property allows the users to specify some information, when the text is empty. For illustration let us create a simple SfTextBoxExt, where the user is asked to enter names separated by a comma,
 
 
 {% highlight xaml %}
