@@ -666,9 +666,9 @@ We have prepared cascading sample for change the UWP Picker background color whe
     
             this.InitializeComponent();
    
-            ColorInfo color info = new ColorInfo();
+            ColorInfo colorInfo = new ColorInfo();
      
-            this.DataContext = color info;
+            this.DataContext = colorInfo;
      
         }
 

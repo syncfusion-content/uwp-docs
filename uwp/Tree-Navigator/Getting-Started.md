@@ -173,7 +173,7 @@ Add the required number of items in multiple hierarchical levels as given below 
 
 ## Setting header for the UWP Tree Navigator Items
 
-Set header for all the items in UWP Tree Navigator as given below:
+Set the header for all the items in the UWP Tree Navigator as given below:
 
 {% tabs %}
 
@@ -223,15 +223,24 @@ Set header for all the items in UWP Tree Navigator as given below:
 
   SfTreeNavigator treeNavigator = new SfTreeNavigator(){Header="Enterprise Toolkit",Width=260 , Height=280,NavigationMode=NavigationMode.Extended};
 
-  treeNavigator.Items.Add(new SfTreeNavigatorItem() { Header = "WinRT (XAML) (20)" });
+  SfTreeNavigatorItem winrtItem = new SfTreeNavigatorItem() { Header = "WinRT (XAML) (20)" };
+  winrtItem.Items.Add(new SfTreeNavigatorItem() { Header = "Controls" });
 
-  treeNavigator.Items.Add(new SfTreeNavigatorItem() { Header="Controls"});
+  SfTreeNavigatorItem wpfItem = new SfTreeNavigatorItem() { Header = "WPF (30)" };
+  wpfItem.Items.Add(new SfTreeNavigatorItem() { Header = "Controls" });
 
-  treeNavigator.Items.Add(new SfTreeNavigatorItem() { Header="WPF (30)"});
+  SfTreeNavigatorItem silverlightItem = new SfTreeNavigatorItem() { Header = "Silverlight (30)" };
+  silverlightItem.Items.Add(new SfTreeNavigatorItem() { Header = "Controls" });
 
-  treeNavigator.Items.Add(new SfTreeNavigatorItem() { Header="Controls"});
+  SfTreeNavigatorItem wpItem = new SfTreeNavigatorItem() { Header = "Windows Phone (20)" };
+  wpItem.Items.Add(new SfTreeNavigatorItem() { Header = "Controls" });
 
-  treeNavigator.Items.Add(new SfTreeNavigatorItem() { Header="Silverlight (30)" });
+  treeNavigator.Items.Add(winrtItem);
+  treeNavigator.Items.Add(wpfItem);
+  treeNavigator.Items.Add(silverlightItem);
+  treeNavigator.Items.Add(wpItem);
+  treeNavigator.Items.Add(new SfTreeNavigatorItem() { Header = "Metro Studio" });
+  treeNavigator.Items.Add(new SfTreeNavigatorItem() { Header = "Orubase Studio" });
 
 {% endhighlight %}
 
@@ -244,15 +253,24 @@ Dim treeNavigator As New SfTreeNavigator() With {
 	.NavigationMode=NavigationMode.Extended
 }
 
-treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "WinRT (XAML) (20)"})
+Dim winrtItem As New SfTreeNavigatorItem() With {.Header = "WinRT (XAML) (20)"}
+winrtItem.Items.Add(New SfTreeNavigatorItem() With {.Header = "Controls"})
 
-treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header="Controls"})
+Dim wpfItem As New SfTreeNavigatorItem() With {.Header = "WPF (30)"}
+wpfItem.Items.Add(New SfTreeNavigatorItem() With {.Header = "Controls"})
 
-treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header="WPF (30)"})
+Dim silverlightItem As New SfTreeNavigatorItem() With {.Header = "Silverlight (30)"}
+silverlightItem.Items.Add(New SfTreeNavigatorItem() With {.Header = "Controls"})
 
-treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header="Controls"})
+Dim wpItem As New SfTreeNavigatorItem() With {.Header = "Windows Phone (20)"}
+wpItem.Items.Add(New SfTreeNavigatorItem() With {.Header = "Controls"})
 
-treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header="Silverlight (30)"})
+treeNavigator.Items.Add(winrtItem)
+treeNavigator.Items.Add(wpfItem)
+treeNavigator.Items.Add(silverlightItem)
+treeNavigator.Items.Add(wpItem)
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Metro Studio"})
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Orubase Studio"})
 
 {% endhighlight %}
 

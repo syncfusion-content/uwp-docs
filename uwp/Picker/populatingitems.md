@@ -60,11 +60,11 @@ To bind the data source in UWP Picker, set the `SfPicker.ItemsSource` property a
 
             SfPicker picker = new SfPicker();
 
-            ColorInfo color info = new ColorInfo();
+            ColorInfo colorInfo = new ColorInfo();
 
-            this.DataContext = color info;
+            this.DataContext = colorInfo;
 
-            picker.ItemsSource = color info.Colors;
+            picker.ItemsSource = colorInfo.Colors;
 
             this.Content = picker;
 

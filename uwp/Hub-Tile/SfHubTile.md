@@ -169,9 +169,9 @@ Apply the required transitions such as Rotate transition, Slide transition, Fade
 
 </notification:SfHubTile>
 
-<Grid/>
+</Grid>
 
-<Page/>
+</Page>
 
 {% endhighlight %}
 
