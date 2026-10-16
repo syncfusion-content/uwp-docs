@@ -9,7 +9,7 @@ documentation: ug
 
 # Summary Types in UWP Pivot Client
 
-The SfPivotClient supports summarizing the data for various data types by using the `SummaryType` property. This property should be defined while defining the pivot calculation by using the `PivotComputationInfo` class to specify the summary type. It holds the following summary types:
+The Pivot Client supports summarizing the data for various data types by using the `SummaryType` property. This property should be defined while defining the pivot calculation by using the `PivotComputationInfo` class to specify the summary type. It holds the following summary types:
 
 * **DoubleTotalSum**: Computes the sum of double or integer from pivot values for the corresponding pivot item.
 * **DoubleAverage**: Computes the average of double or integer from pivot values for the corresponding pivot item.

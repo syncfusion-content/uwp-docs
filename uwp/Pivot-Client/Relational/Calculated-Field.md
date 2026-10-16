@@ -9,7 +9,7 @@ documentation: ug
 
 # Calculated Field in UWP Pivot Client
 
-The SfPivotClient supports adding a new calculated field based on existing calculated items using the calculated field dialog.
+The Pivot Client supports adding a new calculated field based on existing calculated items using the calculated field dialog.
 
 **Adding a calculated field**
 
@@ -25,6 +25,6 @@ The SfPivotClient supports adding a new calculated field based on existing calcu
 
 ![CalculatedField_image3](Calculated-Field_images/CalculatedField_image3.png)
 
-4. Click **Add** to add the calculated field, and then click **OK** to populate the values in the SfPivotClient.
+4. Click **Add** to add the calculated field, and then click **OK** to populate the values in the Pivot Client.
 
 ![CalculatedField_image4](Calculated-Field_images/CalculatedField_image4.png)

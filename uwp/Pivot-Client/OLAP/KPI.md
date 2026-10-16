@@ -22,7 +22,7 @@ There are four types of indicators available in the KPI as listed below:
 
 ## Adding KPI elements
 
-There are two ways to define KPI elements in the SfPivotClient as follows.
+There are two ways to define KPI elements in the Pivot Client as follows.
 
 **Using drag and drop**
 

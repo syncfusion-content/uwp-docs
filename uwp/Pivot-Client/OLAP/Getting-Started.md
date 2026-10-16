@@ -12,17 +12,17 @@ documentation: ug
 >**Important**
 To start with v16.2.0.x, if you reference Syncfusion assemblies from a trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
 
-This section covers the information required to create a simple SfPivotClient control bound to the OLAP data source and a WCF service that helps to bind the OLAP data with the SfPivotClient control through the OLAP data manager.
+This section covers the information required to create a simple Pivot Client control bound to the OLAP data source and a WCF service that helps to bind the OLAP data with the Pivot Client control through the OLAP data manager.
 
-## Initializing SfPivotClient control
+## Initializing Pivot Client control
 
 1. Open Visual Studio IDE and select **File > New > Project** to open a new project dialog.
 
-2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project "SfPivotClientDemo".
+2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project "Pivot ClientDemo".
 
 3. The target version/minimum version dialog appears, in which you can change the target version of the application to **"Windows 10 (10.0; Build 10240)".**
 
-The SfPivotClient control can be initialized and added to the application through any of the following ways:
+The Pivot Client control can be initialized and added to the application through any of the following ways:
 
 1. Designer.
 2. XAML.
@@ -32,15 +32,15 @@ The SfPivotClient control can be initialized and added to the application throug
 
 1. Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-2. Click the toolbox and drag the **SfPivotClient** control from the “Syncfusion controls for UWP XAML” group to drop it on the middle of the design canvas.
+2. Click the toolbox and drag the **Pivot Client** control from the “Syncfusion controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-Now, the SfPivotClient control will be added to the designer as follows.
+Now, the Pivot Client control will be added to the designer as follows.
 
 ![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-The SfPivotClient control can be added to the project by referencing assemblies or extension SDK as described below.
+The Pivot Client control can be added to the project by referencing assemblies or extension SDK as described below.
 
 **Assembly reference**
 
@@ -86,7 +86,7 @@ xmlns:PivotClient="using:Syncfusion.UI.Xaml.PivotClient"
 
 {% endtabs %}
 
-Then, add the SfPivotClient control to the grid by using the namespace specified in the following code snippet.
+Then, add the Pivot Client control to the grid by using the namespace specified in the following code snippet.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ Then, add the SfPivotClient control to the grid by using the namespace specified
 
 ### Adding control through code-behind
 
-The SfPivotClient control can be added to the project by referencing assemblies or an extension SDK as described below.
+The Pivot Client control can be added to the project by referencing assemblies or an extension SDK as described below.
 
 **Assembly reference**
 
@@ -143,7 +143,7 @@ The SfPivotClient control can be added to the project by referencing assemblies 
 N> You can find these libraries under the following location.
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
-Otherwise, the SfPivotClient control can be added to the project by choosing the SDK reference as follows.
+Otherwise, the Pivot Client control can be added to the project by choosing the SDK reference as follows.
 
 **Extension SDK reference**
 
@@ -172,7 +172,7 @@ Otherwise, the SfPivotClient control can be added to the project by choosing the
 
 {% endtabs %}
 
-3. Open the *MainPage.xaml.cs* file and include the Syncfusion.UI.Xaml.PivotClient namespace. Then, initialize the SfPivotClient control in the constructor and add it to the grid as follows.
+3. Open the *MainPage.xaml.cs* file and include the Syncfusion.UI.Xaml.PivotClient namespace. Then, initialize the Pivot Client control in the constructor and add it to the grid as follows.
 
 {% tabs %}
 
@@ -223,22 +223,22 @@ End Namespace
 
 ## Adding service reference to project
 
-N> This section explains how to reference the online service in an UWP application for binding the cube information in the SfPivotClient. The service URL used here refers to the demo cube - “Adventure Works”; it is mainly used for illustration purpose.
+N> This section explains how to reference the online service in an UWP application for binding the cube information in the Pivot Client. The service URL used here refers to the demo cube - “Adventure Works”; it is mainly used for illustration purpose.
 To create your own WCF service, refer to the topic of [Creating WCF Service Application.](#creating-wcf-service-application).
 
-After initializing the SfPivotClient control, right-click the project in the solution explorer and select **Add > Service Reference...**.
+After initializing the Pivot Client control, right-click the project in the solution explorer and select **Add > Service Reference...**.
 
 In the Add Service Reference dialog, enter the following address and click **Go** to add the online service.
 
 [https://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc](https://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc)
 
-## Binding OLAP data to SfPivotClient control
+## Binding OLAP data to Pivot Client control
 
 ### Defining OLAP report and OLAP data manager through view model
 
 Right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class *OlapViewModel* and click **OK**.
 
-The following code snippet illustrates how to define the OLAP report and OLAP data manager for the SfPivotClient control.
+The following code snippet illustrates how to define the OLAP report and OLAP data manager for the Pivot Client control.
 
 N> The `OlapDataChanged` event should be hooked before assigning the current report to OLAP data manager.
 
@@ -486,16 +486,16 @@ End Namespace
 
 {% endtabs %}
 
-### Binding OLAP data manager with SfPivotClient control
+### Binding OLAP data manager with Pivot Client control
 
-The OLAP data can be bound with SfPivotClient control by using the `OlapDataManager` property through the following ways:
+The OLAP data can be bound with Pivot Client control by using the `OlapDataManager` property through the following ways:
 
 * XAML.
 * Code-behind.
 
 **Through XAML**
 
-The following code snippet explains how to bind the OLAP data mentioned in the *OlapViewModel* to the SfPivotClient control with the help of `DataContext` in XAML.
+The following code snippet explains how to bind the OLAP data mentioned in the *OlapViewModel* to the Pivot Client control with the help of `DataContext` in XAML.
 
 {% tabs %}
 
@@ -525,7 +525,7 @@ The following code snippet explains how to bind the OLAP data mentioned in the *
 
 **Through code-behind**
 
-The following code snippet illustrates how to bind the OLAP data to the SfPivotClient control in code-behind.
+The following code snippet illustrates how to bind the OLAP data to the Pivot Client control in code-behind.
 
 {% tabs %}
 
@@ -595,7 +595,7 @@ Finally, run the application to generate the following output.
 N> You can find these libraries in the following location.
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies\4.6\
 
-I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create a SfPivotClient control.
+I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create a Pivot Client control.
 The above assembly can be obtained only after installing the following setup files.
 **SQLSERVER2008_ASADOMD10.msi** and **SQLSERVER2008_ASOLEDB10.msi**
 These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-us/download/details.aspx?id=44277).

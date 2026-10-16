@@ -12,17 +12,17 @@ documentation: ug
 >**Important**
 To start with v16.2.0.x, if you refer to Syncfusion assemblies from a trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
 
-This section explains the steps required to create a simple SfPivotClient control bound to the relational data source such as IList, IEnumerable, etc.
+This section explains the steps required to create a simple Pivot Client control bound to the relational data source such as IList, IEnumerable, etc.
 
-## Initializing SfPivotClient control
+## Initializing Pivot Client control
 
 1. Open Visual Studio IDE and select **File > New > Project** to open a new project dialog.
 
-2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotClientDemo".
+2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "Pivot ClientDemo".
 
 The target version/minimum version dialog appears, in which you can change the target version of the application to **"Windows 10 (10.0; Build 10240)".**
 
-The SfPivotClient control can be initialized and added to the application through the following ways:
+The Pivot Client control can be initialized and added to the application through the following ways:
 
 1. Designer.
 2. XAML.
@@ -32,15 +32,15 @@ The SfPivotClient control can be initialized and added to the application throug
 
 1. Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-2. Click the toolbox and drag the **SfPivotClient** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+2. Click the toolbox and drag the **Pivot Client** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-Now, the SfPivotClient control will be added to the designer as follows.
+Now, the Pivot Client control will be added to the designer as follows.
 
 ![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-The SfPivotClient control can be added to the project by referring assemblies or extension SDK as described below.
+The Pivot Client control can be added to the project by referring assemblies or extension SDK as described below.
 
 **Assembly reference**
 
@@ -86,7 +86,7 @@ xmlns:PivotClient="using:Syncfusion.UI.Xaml.PivotClient"
 
 {% endtabs %}
 
-3. Then, add the SfPivotClient control to the grid by using the namespace specified in the following code snippet.
+3. Then, add the Pivot Client control to the grid by using the namespace specified in the following code snippet.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ xmlns:PivotClient="using:Syncfusion.UI.Xaml.PivotClient"
 
 ### Adding control through code-behind
 
-The SfPivotClient control can be added to the project by referring assemblies or extension SDK as described below.
+The Pivot Client control can be added to the project by referring assemblies or extension SDK as described below.
 
 **Assembly reference**
 
@@ -172,7 +172,7 @@ N> You can find these libraries under the following location.
 
 3. Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotClient". 
 
-4. Then, initialize the SfPivotClient control in the constructor and add it to the grid as illustrated below.
+4. Then, initialize the Pivot Client control in the constructor and add it to the grid as illustrated below.
 
 {% tabs %}
 
@@ -221,13 +221,13 @@ End Namespace
 
 {% endtabs %}
 
-## Binding relational data to SfPivotClient control
+## Binding relational data to Pivot Client control
 
 ### Creating relational data through view model
 
-After initializing the SfPivotClient control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class *ProductSalesViewModel* and click **OK**.
+After initializing the Pivot Client control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class *ProductSalesViewModel* and click **OK**.
 
-The following code snippet illustrates how to define the relational data for the SfPivotClient control.
+The following code snippet illustrates how to define the relational data for the Pivot Client control.
 
 {% tabs %}
 
@@ -356,16 +356,16 @@ End Namespace
 
 {% endtabs %}
 
-### Defining items source, pivot rows, pivot columns, and pivot calculations for SfPivotClient control
+### Defining items source, pivot rows, pivot columns, and pivot calculations for Pivot Client control
 
-Relational data can be bound to the SfPivotClient control by using the `ItemsSource` property through any of the following ways:
+Relational data can be bound to the Pivot Client control by using the `ItemsSource` property through any of the following ways:
 
 * XAML
 * Code-behind
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to the SfPivotClient control with the help of `DataContext`. In addition to this, the `PivotRows`, `PivotColumns`, and `PivotCalculations` should be assigned to the SfPivotClient for populating data in the specific axes.
+The relational data mentioned in the *ProductSalesViewModel* is bound to the Pivot Client control with the help of `DataContext`. In addition to this, the `PivotRows`, `PivotColumns`, and `PivotCalculations` should be assigned to the Pivot Client for populating data in the specific axes.
 
 {% tabs %}
 
@@ -408,7 +408,7 @@ The relational data mentioned in the *ProductSalesViewModel* is bound to the SfP
 
 **Through code-behind**
 
-The following code snippet illustrates how to bind data to the SfPivotClient control in code-behind.
+The following code snippet illustrates how to bind data to the Pivot Client control in code-behind.
 
 {% tabs %}
 

@@ -11,11 +11,11 @@ documentation: ug
 
 Key performance indicators can be virtually defined during the runtime. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is very useful when users want to define KPIs dynamically, and it minimizes the time required to create KPIs.
 
-There are two ways to define a virtual KPI element in the SfPivotClient as illustrated below.
+There are two ways to define a virtual KPI element in the Pivot Client as illustrated below.
 
 **Using virtual KPI editor dialog**
 
-The virtual KPI editor dialog can be opened by clicking the **Create a Virtual KPI Element** ![Virtual-KPI-icon](Virtual-KPI_images/Virtual-KPI-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableVirtualKpi` property is set to true as mentioned below.
+The virtual KPI editor dialog can be opened by clicking the **Create a Virtual KPI Element** ![Virtual-KPI-icon](Virtual-KPI_images/Virtual-KPI-icon.png) available in the Pivot Client's toolbar. This icon will be visible only if the `EnableVirtualKpi` property is set to true as mentioned below.
 
 {% tabs %}
 

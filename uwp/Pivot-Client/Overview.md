@@ -9,11 +9,11 @@ documentation: ug
 
 # About Syncfusion® UWP Pivot Client Control.
 
-The SfPivotClient control supports browsing multidimensional data that is organized in the form of dimensions, measures, named sets, and KPIs in a cube format. You can visualize the results in graphical (pivot chart) and tabular (pivot grid) formats. The control can also be used to create and edit reports on-the-fly that are stored for later use.
+The Pivot Client control supports browsing multidimensional data that is organized in the form of dimensions, measures, named sets, and KPIs in a cube format. You can visualize the results in graphical (pivot chart) and tabular (pivot grid) formats. The control can also be used to create and edit reports on-the-fly that are stored for later use.
 
 ## Key features
 
-The key features of **SfPivotClient** control are listed as follows:
+The key features of **Pivot Client** control are listed as follows:
 
 * **Data source**: Supports data binding with OLAP data source such as Microsoft SQL Server Analysis Services (SSAS), XML/A and relational data source such as IList, IEnumerable, etc.
 * **OLAP**: Supports OLAP DB related features like KPI, named sets, member properties, etc.

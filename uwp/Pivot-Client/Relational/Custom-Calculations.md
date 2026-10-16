@@ -72,7 +72,7 @@ PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With
 
 ## Providing expression field calculation for summaries
 
-The SfPivotClient supports the calculated field for summary cells despite any options provided in summaries such as sum, count, maximum, minimum, etc. This support can be achieved by setting the calculation type as formula and specifying the appropriate formula as specified in the following code snippet.
+The Pivot Client supports the calculated field for summary cells despite any options provided in summaries such as sum, count, maximum, minimum, etc. This support can be achieved by setting the calculation type as formula and specifying the appropriate formula as specified in the following code snippet.
 
 {% tabs %}
 

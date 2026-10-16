@@ -11,7 +11,7 @@ documentation: ug
 
 ## Cube selector
 
-The cube selector allows you to select any one of the cubes available in the connected database. This can be achieved by selecting the data connection menu item from the reports menu. The cube selector dialog will be opened with a drop-down list, displaying the list of cubes available in the current connection. The SfPivotClient will load the corresponding cube elements while changing the cube from the drop-down list.
+The cube selector allows you to select any one of the cubes available in the connected database. This can be achieved by selecting the data connection menu item from the reports menu. The cube selector dialog will be opened with a drop-down list, displaying the list of cubes available in the current connection. The Pivot Client will load the corresponding cube elements while changing the cube from the drop-down list.
 
 ![toolBar_ReportMenu_1](PivotClient-Components_images/toolBar_ReportMenu_1.png)
 
@@ -66,7 +66,7 @@ A user-defined hierarchy organizes the members of a dimension into a hierarchica
 
 ## Axis element builder
 
-The axis element builder allows you to build elements in the axes of the SfPivotClient. This supports four axes: categorical, series, filter(slicer), and value. Based on the construction of the axes, the SfPivotGrid and the SfPivotChart will display the resultant data.
+The axis element builder allows you to build elements in the axes of the Pivot Client. This supports four axes: categorical, series, filter(slicer), and value. Based on the construction of the axes, the SfPivotGrid and the SfPivotChart will display the resultant data.
 
 ### Categorical axis (columns)
 
@@ -141,15 +141,15 @@ By default, the following options are available in the toolbar.
 ![Toolbar](PivotClient-Components_images/Toolbar.png)
 
 * Report menu: The menu button that contains options with respect to all OLAP report manipulations.
-* Report list: The drop-down list that displays the list of OLAP reports loaded in the SfPivotClient.
+* Report list: The drop-down list that displays the list of OLAP reports loaded in the Pivot Client.
 * Toggle pivot: The toggle button that toggles the elements from the categorical axis to the series axis and vice versa.
 * Show/hide expanders: The toggle button that toggles the visibility of expanders used for drilling operations.
 * Show MDX dialog: The button used to display the MDX query that is parsed from the current OLAP report.
-* Enable/disable paging: The toggle button used to enable or disable the paging feature in the SfPivotClient.
+* Enable/disable paging: The toggle button used to enable or disable the paging feature in the Pivot Client.
 
 ## Report manipulations
 
-The OLAP reports can be manipulated with the help of options available under the report menu and the options will be displayed by clicking the **Report Menu** in the SfPivotClient's toolbar.
+The OLAP reports can be manipulated with the help of options available under the report menu and the options will be displayed by clicking the **Report Menu** in the Pivot Client's toolbar.
 
 ![toolBar_ReportMenu_1](PivotClient-Components_images/toolBar_ReportMenu_1.png)
 
@@ -157,7 +157,7 @@ The OLAP reports can be manipulated with the help of options available under the
 
 **New report**
 
-The new report option helps users to clear the existing report collection and to create a new report collection with a single report. By clicking the new report menu item, a report dialog is prompted to specify the name for the OLAP report. By clicking OK, the only one empty report with the specified name is loaded in the SfPivotClient.
+The new report option helps users to clear the existing report collection and to create a new report collection with a single report. By clicking the new report menu item, a report dialog is prompted to specify the name for the OLAP report. By clicking OK, the only one empty report with the specified name is loaded in the Pivot Client.
 
 ![newReport](PivotClient-Components_images/newReport.png)
 
@@ -189,7 +189,7 @@ This option saves the report in the local system. The Save As dialog opens for p
 
 **Load report**
 
-This option loads a report from the local system. By clicking the load report menu item, the dialog box opens to load a report into the SfPivotClient.
+This option loads a report from the local system. By clicking the load report menu item, the dialog box opens to load a report into the Pivot Client.
 
 ![loadReport](PivotClient-Components_images/loadReport.png)
 
