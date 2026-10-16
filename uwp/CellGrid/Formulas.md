@@ -9,7 +9,7 @@ documentation: ug
 
 # Formulas in UWP Excel-like Grid
 
-SfCellGrid calculation engine offers automated calculation over a formula, expression. SfCellGrid`s calculation engine is preloaded with 409 formulas covering a broad range of business functions.
+Excel-like Grid calculation engine offers automated calculation over a formula, expression. Excel-like Grid`s calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 
 ## Adding Formula into cell
 
@@ -28,7 +28,7 @@ N> If you are inserting the formula through button click event, then you need to
 
 ## Supported functions
 
-Following is a list of functions that are supported by SfCellGrid.
+Following is a list of functions that are supported by the Excel-like Grid.
 
 ### Database Functions
 

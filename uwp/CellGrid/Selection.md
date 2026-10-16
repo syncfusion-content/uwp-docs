@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in UWP Excel-like Grid
 
-This section explains about the Selection behavior in SfCellGrid.
+This section explains about the Selection behavior in Excel-like Grid.
 
-The SfCellGrid control provides support for selection in grid by using mouse, keyboard and touch interactions.
+The Excel-like Grid control provides support for selection in grid by using mouse, keyboard and touch interactions.
 
-By default, Selection behavior will be enabled in SfCellGrid, but if you want to disable the selection in SfCellGrid, then set the `AllowSelection` Property to be false.
+By default, Selection behavior will be enabled in the control, but if you want to disable the selection in the control, then set the `AllowSelection` Property to be false.
 
 {% tabs %}
 {% highlight c# %}
@@ -25,7 +25,7 @@ By default, Selection behavior will be enabled in SfCellGrid, but if you want to
 
 ## Accessing the Current cell
 
-SfCellGrid allows the user to access the active cell by using the `CurrentCell` property of `SelectionController` Class.
+The Excel-like Grid allows the user to access the active cell by using the `CurrentCell` property of `SelectionController` Class.
 
 {% tabs %}
 {% highlight c# %}
@@ -37,7 +37,7 @@ var cell = cellGrid.SelectionController.CurrentCell;
 
 ## Accessing the Selected ranges
 
-SfCellGrid allows the user to access the selected ranges list using the `SelectedRanges` property.
+The Excel-like Grid allows the user to access the selected ranges list using the `SelectedRanges` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -51,7 +51,7 @@ N> To get the active range in the selected ranges list, use `ActiveRange` proper
 
 ## Adding or Clearing the Selection
 
-SfCellGrid allows the user to add and clear the selection for the given range.
+The Excel-like Grid allows the user to add and clear the selection for the given range.
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ cellGrid.SelectionController.ClearSelection();
 
 ## Move Current Cell
 
-SfCellGrid allows the user to move the current cell to the mentioned cell.
+The Excel-like Grid allows the user to move the current cell to the mentioned cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -94,7 +94,7 @@ cellGrid.CurrentCell.MoveCurrentCell(5, 5);
 
 ### SelectionBorderThickness
 
-SfCellGrid allows the user to set the thickness of the border around the selected cells.
+The Excel-like Grid allows the user to set the thickness of the border around the selected cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +106,7 @@ cellGrid.SelectionBorderThickness = 5;
 
 ### SelectionBorderBrush
  
-SfCellGrid allows the user to set the brush color of the border around the selected cells.
+The Excel-like Grid allows the user to set the brush color of the border around the selected cells.
 
 {% tabs %}
 {% highlight c# %} 
@@ -118,7 +118,7 @@ cellGrid.SelectionBorderBrush = new SolidColorBrush(Colors.DarkOliveGreen);
 
 ### SelectionBrush
 
-SfCellGrid allows the user to set the brush color for background of the selected cells.
+The Excel-like Grid allows the user to set the brush color for background of the selected cells.
 
 {% tabs %}
 {% highlight c# %} 
@@ -189,7 +189,7 @@ Gets or sets the thickness of selection border. </td></tr>
 <tr>
 <td>
 <code>AllowSelection</code></td><td>
-Gets or Sets the value whether to allow the selection in the SfCellGrid or not. </td></tr>
+Gets or Sets the value whether to allow the selection in the Excel-like Grid or not. </td></tr>
 <tr>
 <td>
 <code>ShowTouchIndicator</code></td><td>
@@ -275,22 +275,22 @@ Moves to the last cell of the current row. </td></tr>
 <td>
 UPARROW
 </td><td>
-Moves to one cell up of the current cell in the SfCellGrid. </td></tr>
+Moves to one cell up of the current cell in the Excel-like Grid. </td></tr>
 <tr>
 <td>
 DOWNARROW
 </td><td>
-Moves to one cell down of the current cell in the SfCellGrid. </td></tr>
+Moves to one cell down of the current cell in the Excel-like Grid. </td></tr>
 <tr>
 <td>
 LEFTARROW
 </td><td>
-Moves to one cell left of the current cell in the SfCellGrid. </td></tr>
+Moves to one cell left of the current cell in the Excel-like Grid. </td></tr>
 <tr>
 <td>
 RIGHTARROW
 </td><td>
-Moves to one cell right of the current cell in the SfCellGrid. </td></tr>
+Moves to one cell right of the current cell in the Excel-like Grid. </td></tr>
 <tr>
 <td>
 PAGEUP</td><td>
@@ -302,19 +302,19 @@ Moves to the last visible cell of the current column. </td></tr>
 <tr>
 <td>
 CTRL+HOME</td><td>
-Moves to the beginning cell of a SfCellGrid. </td></tr>
+Moves to the beginning cell of the Excel-like Grid. </td></tr>
 <tr>
 <td>
 CTRL+END</td><td>
-Moves to the last cell of a SfCellGrid. </td></tr>
+Moves to the last cell of the Excel-like Grid. </td></tr>
 <tr>
 <td>
 ALT+PAGE UP</td><td>
-Moves one screen to the left in a SfCellGrid. </td></tr>
+Moves one screen to the left in the Excel-like Grid. </td></tr>
 <tr>
 <td>
 ALT+PAGE DOWN</td><td>
-Moves one screen to the right in a SfCellGrid. </td></tr>
+Moves one screen to the right in the Excel-like Grid. </td></tr>
 <tr>
 <td>
 CTRL + ARROW KEYS</td><td>
@@ -362,20 +362,20 @@ Extends the selection from the active cell to the first cell. </td></tr>
 <tr>
 <td>
 SHIFT+PAGE DOWN</td><td>
-Extends the selection down in a SfCellGrid. </td></tr>
+Extends the selection down in the Excel-like Grid. </td></tr>
 <tr>
 <td>
 SHIFT+PAGE UP</td><td>
-Extends the selection up in a SfCellGrid. </td></tr>
+Extends the selection up in the Excel-like Grid. </td></tr>
 </table>
 
 ## Touch Selection Attributes
 
-SfCellGrid provides support for touch selection. 
+The Excel-like Grid provides support for touch selection. 
 
 ### ShowTouchIndicator
 
-By default, the touch indicator is enabled in SfCellGrid. If you want to disable the indicator, then set the `ShowTouchIndicator` to false.
+By default, the touch indicator is enabled in Excel-like Grid. If you want to disable the indicator, then set the `ShowTouchIndicator` to false.
 
 {% tabs %}
 {% highlight c# %} 

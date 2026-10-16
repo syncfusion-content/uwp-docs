@@ -9,11 +9,12 @@ documentation: ug
 
 # Interactive Features in UWP Excel-like Grid
 
-This section explains interactive operations in the SfCellGrid.
+The Excel-like Grid provides support to import the data from Excel using the `ImportFromExcel` method by passing the Excel file as `StorageFile`.
+This section explains interactive operations in the .
 
 ## Clipboard operations
 
-The supported clipboard operations, cut, copy, and paste are managed in `GridCopyPaste` class. This class can be accessed by using the `CopyPaste` property of the SfCellGrid that provides methods to perform clipboard operations.
+The supported clipboard operations, cut, copy, and paste are managed in `GridCopyPaste` class. This class can be accessed by using the `CopyPaste` property of the Excel-like Grid that provides methods to perform clipboard operations.
 
 ### Cut
 
@@ -34,7 +35,7 @@ cellGrid.CopyPaste.Copy(range, true);
 
 #### Event related with cut operation
 
-The `ClipboardCut` event occurs when performing cut operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
+The `ClipboardCut` event occurs when performing cut operation in the Excel-like Grid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,7 +70,7 @@ cellGrid.CopyPaste.Copy(range, false);
 
 #### Event related with copy operation
 
-The `ClipboardCopy` event occurs when performing copy operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
+The `ClipboardCopy` event occurs when performing copy operation in the Excel-like Grid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +87,7 @@ private void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 
 ### Paste
 
-The copied ranges from the SfCellGrid can be pasted by using the `Paste` method or keyboard keys <kbd>Ctrl<kbd> + <kbd>V</kbd> combination.
+The copied ranges from the Excel-like Grid can be pasted by using the `Paste` method or keyboard keys <kbd>Ctrl<kbd> + <kbd>V</kbd> combination.
 
 {% tabs %}
 {% highlight c# %}
@@ -140,7 +141,7 @@ Copies and pastes from the clipboard without pasting any styles. </td></tr>
 
 #### Event related with paste operation
 
-The `ClipboardPaste` event occurs when performing paste operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get or set the pasting range and handles this event.
+The `ClipboardPaste` event occurs when performing paste operation in the Excel-like Grid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get or set the pasting range and handles this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +158,7 @@ private void Model_ClipboardPaste(object sender, GridCutPasteEventArgs e)
 
 ## Tooltip
 
-The SfCellGrid provides support for adding tooltip for individual cells. Tooltip will be displayed as small pop-up window when the mouse hover the cells. 
+The Excel-like Grid provides support for adding tooltip for individual cells. Tooltip will be displayed as small pop-up window when the mouse hover the cells. 
 
 To display the tooltip, set the `ShowTooltip` property to true.
 
@@ -196,7 +197,7 @@ cellGrid.Model.RowStyles[3].Tooltip = "Syncfusion";
 
 ### Customization of tooltip
 
-The tooltip can be customized by defining a custom data template and assign to the `TooltipTemplate` property of the SfCellGrid.
+The tooltip can be customized by defining a custom data template and assign to the `TooltipTemplate` property of the Excel-like Grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -227,7 +228,7 @@ N> Customized data template should be defined in SfCellGrid.Resources in XAML fi
 
 ### Reset tooltip
 
-The `ResetTooltip` method is used to reset or remove the tooltip from the SfCellGrid.
+The `ResetTooltip` method is used to reset or remove the tooltip from the Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -239,7 +240,7 @@ cellGrid.Model[3, 3].ResetTooltip();
 
 ### Reset tooltip template
 
-The `ResetTooltipTemplate` method is used to reset or remove the defined custom tooltip template from the SfCellGrid.
+The `ResetTooltipTemplate` method is used to reset or remove the defined custom tooltip template from the Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -251,7 +252,7 @@ cellGrid.Model[3, 3].ResetTooltipTemplate();
 
 ### CellTooltipOpening event
 
-The `CellTooltipOpening` event occurs when opening the tooltip in the SfCellGrid. It receives an argument of type `CellTooltipOpeningEventArgs` containing the following information about the event.
+The `CellTooltipOpening` event occurs when opening the tooltip in the Excel-like Grid. It receives an argument of type `CellTooltipOpeningEventArgs` containing the following information about the event.
 
 <table>
 <tr>
@@ -289,7 +290,7 @@ private void CellGrid_CellTooltipOpening(object sender, CellTooltipOpeningEventA
 
 ## Comment tip
 
-The SfCellGrid provides support for adding the Excel-like comment tip to the individual cells. This acts as note that provides more information about the data in an individual cell on mouse hover.
+The Excel-like Grid provides support for adding the Excel-like comment tip to the individual cells. This acts as note that provides more information about the data in an individual cell on mouse hover.
 
 When a cell has a comment, a red indicator appears in the corner of the cell. When resetting the pointer on the cell, the comment appears.
 
@@ -342,7 +343,7 @@ cellGrid.Model[5, 5].CommentBrush = new SolidColorBrush(Colors.GreenYellow);
 
 ### Customization of comment
 
-The comment can be customized by defining a custom data template and assign to the `CommentTemplate` property of the SfCellGrid.
+The comment can be customized by defining a custom data template and assign to the `CommentTemplate` property of the Excel-like Grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -373,7 +374,7 @@ N> Customized data template should be defined in the SfCellGrid.Resources in XAM
 
 ### Reset comment
 
-The `ResetComment` method is used to reset or remove the comment from the SfCellGrid.
+The `ResetComment` method is used to reset or remove the comment from the Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -385,7 +386,7 @@ cellGrid.Model[3, 3].ResetComment();
 
 ### Reset comment template
 
-The `ResetCommentTemplate` method is used to reset or remove the custom comment template defined in the SfCellGrid.
+The `ResetCommentTemplate` method is used to reset or remove the custom comment template defined in the Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -397,7 +398,7 @@ cellGrid.Model[3, 3].ResetCommentTemplate();
 
 ### CellCommentOpening event
 
-The `CellCommentOpening` event occurs when opening the comment in the SfCellGrid. It receives an argument of type `CellCommentOpeningEventArgs` containing the following information about the event.
+The `CellCommentOpening` event occurs when opening the comment in the Excel-like Grid. It receives an argument of type `CellCommentOpeningEventArgs` containing the following information about the event.
 
 <table>
 <tr>
@@ -440,7 +441,7 @@ private void CellGrid_CellCommentOpening(object sender, CellCommentOpeningEventA
 
 ## Context menu
 
-Context menu is a customizable menu used for various functionalities. The context menu opens when the user right-click the cell or selection of cells in the SfCellGrid.
+Context menu is a customizable menu used for various functionalities. The context menu opens when the user right-click the cell or selection of cells in the Excel-like Grid.
 
 User can add their own menu items and assign to the `CellContextMenu` property.
 
@@ -469,7 +470,7 @@ public ContextMenu menu()
 
 ### CellContextMenuOpening event
 
-This event occurs when the context menu opens in the SfCellGrid. It receives an argument of type `CellContextMenuOpeningEventArgs` containing the following information about the event.
+This event occurs when the context menu opens in the Excel-like Grid. It receives an argument of type `CellContextMenuOpeningEventArgs` containing the following information about the event.
 
 <table>
 <tr>

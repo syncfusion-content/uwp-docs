@@ -9,7 +9,7 @@ documentation: ug
 
 # Importing in UWP Excel-like Grid
 
-The `ExcelImportExtension` class is used to import entire cells from the Excel sheet to SfCellGrid. 
+The `ExcelImportExtension` class is used to import entire cells from the Excel sheet to Excel-like Grid. 
 
 Following styles are imported from Excel:
 
@@ -49,7 +49,7 @@ option.ImportMode = ImportMode.Text;
 
 ## Using stream
 
-The SfCellGrid provides support to import the data from Excel using the `ImportFromExcel` method by passing the Excel file as `Stream`.
+The Excel-like Grid provides support to import the data from Excel using the `ImportFromExcel` method by passing the Excel file as `Stream`.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,7 +74,7 @@ cellGrid.ImportFromExcel(fileStream,option);
 
 ## Using worksheet
 
-The SfCellGrid provides support to import the data from Excel using the `ImportFromExcel` method by passing the worksheet(`IWorksheet`) from XlsIO.
+The Excel-like Grid provides support to import the data from Excel using the `ImportFromExcel` method by passing the worksheet(`IWorksheet`) from XlsIO.
 
 {% tabs %}
 {% highlight c# %}
@@ -102,7 +102,7 @@ cellGrid.ImportFromExcel((workbook as IWorkbook).ActiveSheet,option);
 
 ## Using storage file
 
-The SfCellGrid provides support to import the data from Excel using the `ImportFromExcel` method by passing the Excel file as `StorageFile`.
+The Excel-like Grid provides support to import the data from Excel using the `ImportFromExcel` method by passing the Excel file as `StorageFile`.
 
 {% tabs %}
 {% highlight c# %}

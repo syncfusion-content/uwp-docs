@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Styles in UWP Excel-like Grid
 
-This section explains about how to apply the cell styles to customize the appearance in SfCellGrid.
+This section explains about how to apply the cell styles to customize the appearance in the Excel-like Grid.
 
 ## BaseStyles
 
@@ -30,7 +30,7 @@ cellGrid.Model[5,3].BaseStyle = "custom";
           
 ### QueryBaseStyle Event
 
- `QueryBaseStyle` Event is used to apply the `BaseStyle` at run time in SfCellGrid instead of storing in the base style collection.
+ `QueryBaseStyle` Event is used to apply the `BaseStyle` at run time in Excel-like Grid instead of storing in the base style collection.
  
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +68,7 @@ private void Model_QueryBaseStyles(object sender, Syncfusion.UI.Xaml.CellGrid.St
 ## TableStyle
 
 TableStyle is a single `GridStyleInfo` object that is associated with the entire grid. To apply the styles for the each and every cell in
-SfCellGrid, `TableStyle` property is used
+Excel-like Grid, `TableStyle` property is used
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ cellGrid.Model.TableStyle.Borders.All = new Pen(new SolidColorBrush(Colors.Orang
 
 ## RowStyles
 
-RowStyles are `GridStyleInfo` objects that are associated with each row in SfCellGrid. To apply styles for particular row or range of rows, `RowStyles` property is used.
+RowStyles are `GridStyleInfo` objects that are associated with each row in the Excel-like Grid. To apply styles for particular row or range of rows, `RowStyles` property is used.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ cellGrid.Model.RowStyles[3].Borders.All = new Pen(new SolidColorBrush(Colors.Ora
 
 ## ColStyles
 
-ColStyles are `GridStyleInfo` objects that are associated with each column in SfCellGrid. To apply styles for particular column or range of columns, `ColStyles` property is used.
+ColStyles are `GridStyleInfo` objects that are associated with each column in Excel-like Grid. To apply styles for particular column or range of columns, `ColStyles` property is used.
 
 {% tabs %}
 {% highlight c# %}
@@ -119,11 +119,11 @@ cellGrid.Model.ColStyles[4].Borders.All = new Pen(new SolidColorBrush(Colors.Gra
 {% endhighlight %}
 {% endtabs %}
 
-N> `RowColStylePrecedence` property of `GridStyleInfo` is for setting the priority to either row/column when both `RowStyles` and `ColStyles` are used in SfCellGrid. Default `PrecedenceStyle` is Row.
+N> `RowColStylePrecedence` property of `GridStyleInfo` is for setting the priority to either row/column when both `RowStyles` and `ColStyles` are used in the Excel-like Grid. Default `PrecedenceStyle` is Row.
 
 ## HeaderStyle
 
-HeaderStyle are `GridStyleInfo` objects that are associated with header rows/columns in SfCellGrid. To apply styles for header rows or columns, `HeaderStyle` property is used.
+HeaderStyle are `GridStyleInfo` objects that are associated with header rows/columns in the Excel-like Grid. To apply styles for header rows or columns, `HeaderStyle` property is used.
 
 {% tabs %}
 {% highlight c# %}
@@ -145,7 +145,7 @@ cellGrid.Model.HeaderStyle.Borders.All = new Pen(new SolidColorBrush(Colors.Oran
 
 ## FooterStyle
 
-FooterStyle are `GridStyleInfo` objects that are associated with footer rows/columns in SfCellGrid. To apply styles for footer rows or columns, `FooterStyle` property is used.
+FooterStyle are `GridStyleInfo` objects that are associated with footer rows/columns in Excel-like Grid. To apply styles for footer rows or columns, `FooterStyle` property is used.
 
 {% tabs %}
 {% highlight c# %}

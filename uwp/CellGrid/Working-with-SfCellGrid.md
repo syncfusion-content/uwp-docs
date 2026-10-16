@@ -12,15 +12,15 @@ documentation: ug
 
 ## Virtualization
 
-SfCellGrid provides support for virtualization in which data will be dynamically loaded into the grid through on demand or when the user needs to view the data.
-SfCellGrid does not store the cell data in `GridStyleInfo` objects or any other internal grid storage. All information is provided while populating the data through the `QueryCellInfo` event, 
+The Excel-like Grid provides support for virtualization in which data will be dynamically loaded into the grid through on demand or when the user needs to view the data.
+Excel-like Grid does not store the cell data in `GridStyleInfo` objects or any other internal grid storage. All information is provided while populating the data through the `QueryCellInfo` event, 
 thus increasing the performance.
 
 The `QueryCellInfo` event will be triggered for each cell when it comes into view. For more information, refer [QueryCellInfo](https://help.syncfusion.com/uwp/cellgrid/working-with-sfcellgrid#querycellinfo-event) topic.
 
 ## QueryCellInfo Event
 
-The `QueryCellInfo` event of SfCellGrid is to populate the data at runtime.This event is used to provide `GridStyleInfo` object for a given cell. The `CellValue` property of the `GridStyleInfo` object holds the data. 
+The `QueryCellInfo` event of Excel-like Grid is to populate the data at runtime.This event is used to provide `GridStyleInfo` object for a given cell. The `CellValue` property of the `GridStyleInfo` object holds the data. 
 All the changes made in this event is done in on-demand basis and not stored in any internal storage.
 
 This event allows you to customize cell contents at run-time on demand, just before the cell is drawn or programmatically accessed.
@@ -72,7 +72,7 @@ please refer [here](https://help.syncfusion.com/uwp/cellgrid/working-with-sfcell
 ## CommitCellInfo Event
 
 `CommitCellInfo` event save the changes made in the UI, to the external data source.The event handler receives an argument of type `GridCommitCellInfoEventArgs` containing data related to this event.
-This event commits the changes in value and `GridStyleInfo` object for the cell in SfCellGrid.
+This event commits the changes in value and `GridStyleInfo` object for the cell in Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -108,7 +108,7 @@ private void Model_CommitCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Sty
 ## Gridlines
 
 Enabling grid lines creates a borders around all cells within the CellGrid. Grid lines can be shown or hidden by using `ShowGridLines` property.
-By default, the grid lines are visible in the SfCellGrid. If you want to hide the grid lines, then set the `ShowGridLines` property to false.
+By default, the grid lines are visible in the Excel-like Grid. If you want to hide the grid lines, then set the `ShowGridLines` property to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ cellGrid.ShowGridLines = false;
 
 ### Gridline Color
 
-User can set any color to the grid lines in SfCellGrid using the `GridLineColor` property.
+User can set any color to the grid lines in the Excel-like Grid using the `GridLineColor` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,7 +137,7 @@ cellGrid.GridLineColor = Brushes.Green;
 ## Headers and Footers
 
 Headers are the cells which represents the rows/columns at top while the footers are the cells which represents the rows/columns at bottom of the CellGrid.
-SfCellGrid allows the user to set multiple header rows/columns and footer rows/columns. 
+The Excel-like Grid allows the user to set multiple header rows/columns and footer rows/columns. 
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ cellGrid.FooterColumns = 2;
 
 ## Refreshing the Grid
 
-Refreshing the grid means forcing the grid cells to be repainted or resetting of `GridStyleInfo` objects in the view. SfCellGrid allows you to invalidate or refresh the view either by specifying the full range or particular range.
+Refreshing the grid means forcing the grid cells to be repainted or resetting of `GridStyleInfo` objects in the view. The Excel-like Grid allows you to invalidate or refresh the view either by specifying the full range or particular range.
 The range to be invalidated can be passed as `GridRangeInfo` object in the below methods.
 
 {% tabs %}
@@ -210,7 +210,7 @@ cellGrid.InvalidateSelection();
 
 ### Auto Scrolling
 
-SfCellGrid scrolls rows and columns automatically when the user drags the pressed mouse to an edge of the view. By default, auto scrolling is enabled in SfCellGrid.
+The Excel-like Grid scrolls rows and columns automatically when the user drags the pressed mouse to an edge of the view. By default, auto scrolling is enabled in the control.
 But you can disable this auto scrolling by setting the `IsEnabled` property of `GridAutoScroller` to false.
 
 {% tabs %}
@@ -225,7 +225,7 @@ cellGrid.AutoScroller.IsEnabled = false;
 
 ### Programmatic Scrolling
 
-SfCellGrid allows the user to scroll the grid into mentioned cell, by using `ScrollInView` method.
+The Excel-like Grid allows the user to scroll the grid into mentioned cell, by using `ScrollInView` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -236,7 +236,7 @@ cellGrid.ScrollInView(new RowColumnIndex(5, 5));
 {% endhighlight %}
 {% endtabs %}
 
-The other scrolling methods in SfCellGrid are
+The other scrolling methods in Excel-like Grid are
 
 `ScrollToNextPage`      - Scrolls to next page in horizontal/vertical direction
 
@@ -268,11 +268,11 @@ cellGrid.InvalidateVisual();
 
 ### How to get the Row and Column Index of the cell from Mouse Point?
 
-In SfCellGrid, you can get the Row and Column Index of a cell under the Mouse Point, by using PointToCellRowColumnIndex and PointToCellRowColumnIndexOutsideCells.
+In Excel-like Grid, you can get the Row and Column Index of a cell under the Mouse Point, by using PointToCellRowColumnIndex and PointToCellRowColumnIndexOutsideCells.
 
 #### PointToCellRowColumnIndex:
 
-This method allows you to get the Row and Column Index of a cell under the mouse point in SfCellGrid, regardless of its position.
+This method allows you to get the Row and Column Index of a cell under the mouse point in Excel-like Grid, regardless of its position.
 
 Syntax: PointToCellRowColumnIndex (Point p);
 
@@ -287,7 +287,7 @@ RowColumnIndex cell = grid.PointToCellRowColumnIndex(position);
 
 #### PointToCellRowColumnIndexOutsideCells:
 
-This method allows you to get the Row and Column Index of the cell under the mouse point in SfCellGrid. It also allows you to identify whether you have clicked inside the cell or points outside the cell, that is, points over the gridlines.
+This method allows you to get the Row and Column Index of the cell under the mouse point in Excel-like Grid. It also allows you to identify whether you have clicked inside the cell or points outside the cell, that is, points over the gridlines.
 
 Syntax: PointToCellRowColumnIndexOutsideCells(Point p, bool allowOutsideLines)
 
@@ -302,9 +302,9 @@ RowColumnIndex cell = cellGrid.PointToCellRowColumnIndexOutsideCells(position, f
 
 T>You can easily identify whether you have clicked at any point inside the cell or outside the cell by setting allowOutsideLines as “False”. It returns negative values for the points that are outside the cell.
 
-### How to remove the gridlines in SfCellGrid?
+### How to remove the gridlines in Excel-like Grid?
 
-To remove the gridlines in SfCellGrid, then set the `ShowGridLines` property to false.
+To remove the gridlines in Excel-like Grid, then set the `ShowGridLines` property to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -316,9 +316,9 @@ cellGrid.ShowGridLines = false;
 {% endhighlight %}
 {% endtabs %}
 
-### How to reset the SfCellGrid?
+### How to reset the Excel-like Grid?
 
-To reset or refresh the cells, you need to invoke `InvalidateCells` method of SfCellGrid.
+To reset or refresh the cells, you need to invoke `InvalidateCells` method of the Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
