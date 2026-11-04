@@ -6,6 +6,9 @@ control: Syncfusion® UWP
 documentation: ug
 ---
 
+> Starting with the 2027 Volume 1 release, UWP development will be frozen, and the product will enter maintenance mode. No new features or enhancements will be added; only technical support and critical bug fixes will be provided.
+ 
+
 # About Syncfusion® UWP
 
 Essential<sup>&reg;</sup> UWP is a comprehensive collection of 35+ enterprise-grade UWP components for building windows store applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
